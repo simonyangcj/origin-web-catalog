@@ -3,7 +3,7 @@ import * as _ from 'lodash';
 import * as $ from 'jquery';
 
 export class ServicesViewController implements angular.IController {
-  static $inject = ['Constants', 'Catalog', 'KeywordService', 'Logger', 'HTMLService', '$element', '$filter', '$rootScope', '$scope', '$timeout'];
+  static $inject = ['Constants', 'Catalog', 'KeywordService', 'Logger', 'HTMLService', '$element', '$filter', '$rootScope', '$scope', '$timeout', 'gettext', 'gettextCatalog'];
 
   static readonly MAX_RESIZE_RETRIES: number = 20;
 
@@ -21,6 +21,8 @@ export class ServicesViewController implements angular.IController {
   private scrollParent: any;
   private debounceResize: any;
   private removeFilterListener: any;
+  private gettext: any;
+  private gettextCatalog: any;
 
   // Only resize to the difference bteween the old and new heights.
   private previousSubCategoryHeight: number = 0;
@@ -30,7 +32,7 @@ export class ServicesViewController implements angular.IController {
   // items render. Count how many times we try to read the height before giving up.
   private resizeRetries: number = 0;
 
-  constructor(constants: any, catalog: any, keywordService: any, logger: any, htmlService: any, $element: any, $filter: any, $rootScope: any, $scope: any, $timeout: any) {
+  constructor(constants: any, catalog: any, keywordService: any, logger: any, htmlService: any, $element: any, $filter: any, $rootScope: any, $scope: any, $timeout: any, gettext: any, gettextCatalog: any) {
     this.constants = constants;
     this.catalog = catalog;
     this.keywordService = keywordService;
@@ -41,6 +43,8 @@ export class ServicesViewController implements angular.IController {
     this.$rootScope = $rootScope;
     this.$scope = $scope;
     this.$timeout = $timeout;
+    this.gettext = gettext;
+    this.gettextCatalog = gettextCatalog;
     this.ctrl.loaded = false;
     this.ctrl.isEmpty = false;
     this.ctrl.mobileView = 'categories';
@@ -56,7 +60,7 @@ export class ServicesViewController implements angular.IController {
     $(window).on('resize.services', this.debounceResize);
 
     this.ctrl.currentFilter = this.ctrl.currentSubFilter = 'all';
-    this.ctrl.sectionTitle = this.ctrl.sectionTitle || 'Browse Catalog';
+    this.ctrl.sectionTitle = this.ctrl.sectionTitle || this.gettextCatalog.getString('Browse Catalog');
 
     this.removeFilterListener = this.$rootScope.$on('filter-catalog-items', (event: any, searchCriteria: any) => {
       this.setKeywordFilter(searchCriteria.searchText);

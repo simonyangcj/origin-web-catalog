@@ -24,6 +24,7 @@ require('angular-utf8-base64');
 require('hopscotch/dist/js/hopscotch.js');
 require('angular-schema-form');
 require('angular-schema-form-bootstrap');
+// require('angular-gettext/dist/angular-gettext');
 
 try {
   require('./config.local.js');
