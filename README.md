@@ -15,7 +15,8 @@ $ grunt --gruntfile Gruntfile.translate.js
 4. edit po file to generate po file
 5. use grunt to generate translations-catalog.js file
 $ grunt --gruntfile Gruntfile.translate.js
-6. replace dist/orgin-web-catalog.js, dist/translations-catalog.js to origin-web-console/bower_components/origin-web-catalog/dist
+6. replace dist/orgin-web-catalog.js to origin-web-console/bower_components/origin-web-catalog/dist/orgin-web-catalog.js
+7. replace dist/translations-catalog.js to origin-web-console/app/scripts/translations-catalog.js
 7. origin-web-console rebuild
 ```
 
