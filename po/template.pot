@@ -1,0 +1,24 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+
+#: dist/origin-web-catalogs.js:2119
+msgid "Browse Catalog"
+msgstr ""
+
+#: src/components/services-view/services-view.html:18
+#: src/components/services-view/services-view.html:32
+msgid "Deploy Image"
+msgstr ""
+
+#: src/components/services-view/services-view.html:21
+#: src/components/services-view/services-view.html:35
+msgid "Import YAML / JSON"
+msgstr ""
+
+#: src/components/services-view/services-view.html:24
+#: src/components/services-view/services-view.html:38
+msgid "Select from Project"
+msgstr ""

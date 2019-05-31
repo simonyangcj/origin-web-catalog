@@ -1,0 +1,32 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"X-Generator: Poedit 2.2.3\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: zh_CN\n"
+
+#: dist/origin-web-catalogs.js:2119
+msgid "Browse Catalog"
+msgstr "浏览目录"
+
+#: src/components/services-view/services-view.html:18
+#: src/components/services-view/services-view.html:32
+msgid "Deploy Image"
+msgstr "部署镜像"
+
+#: src/components/services-view/services-view.html:21
+#: src/components/services-view/services-view.html:35
+msgid "Import YAML / JSON"
+msgstr "导入YAML/JSON"
+
+#: src/components/services-view/services-view.html:24
+#: src/components/services-view/services-view.html:38
+msgid "Select from Project"
+msgstr "从项目中选择"

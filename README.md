@@ -4,6 +4,19 @@ A component library created for the cataloging components for [The OpenShift Web
 
 [![Build Status](https://travis-ci.org/openshift/origin-web-catalog.svg?branch=master)](https://travis-ci.org/openshift/origin-web-catalog)
 
+## Translate step
+```
+1. use webpack to build
+$ npm run build
+2. add translate for html files, add gettext/gettextCatalog.getString for ts files
+3. use grunt to generate pot file
+$ grunt --gruntfile Gruntfile.translate.js
+4. edit po file to generate po file
+5. use grunt to generate tranlsate-catalog.js file
+$ grunt --gruntfile Gruntfile.translate.js
+6. replace dist folder to origin-web-console/bower_components/origin-web-catalog
+7. origin-web-console rebuild
+```
 ## Quick start
 
 ```

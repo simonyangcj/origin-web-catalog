@@ -13,3 +13,4 @@ dist/*.gif
 dist/*.jpg
 dist/*.png
 .DS_Store
+package-lock.json
