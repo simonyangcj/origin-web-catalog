@@ -21,8 +21,21 @@ msgid "{{ form.add || 'Add'}}"
 msgstr "{{ form.add || ’添加’}}"
 
 #: src/components/projects-summary/projects-summary.html:18
+#: src/components/select-project/selectProject.html:4
 msgid "A cluster admin can create a project for you by running the command:"
 msgstr "集群管理员通过运行命令创建项目："
+
+#: src/components/select-project/selectProject.html:52
+msgid "a project."
+msgstr "一个项目。"
+
+#: src/components/select-project/selectProject.html:83
+msgid "A unique name for the project."
+msgstr "唯一的项目名称。"
+
+#: src/components/select-project/selectProject.html:18
+msgid "Add to Project"
+msgstr "添加到项目"
 
 #: src/components/create-from-builder/create-from-builder-configure.html:112
 msgid "advanced options"
@@ -77,7 +90,7 @@ msgstr "浏览目录"
 
 #: src/components/order-service/order-service-results.html:64
 msgid "Browse resources for {{$ctrl.serviceClass.name}}:"
-msgstr ""
+msgstr "浏览资源 {{$ctrl.serviceClass.name}}:"
 
 #: src/components/projects-summary/projects-summary.html:95
 msgid "by"
@@ -140,6 +153,7 @@ msgstr "创建"
 
 #: dist/origin-web-catalogs.js:2060
 #: src/components/projects-summary/projects-summary.html:7
+#: src/components/select-project/selectProject.html:17
 msgid "Create Project"
 msgstr "创建项目"
 
@@ -221,12 +235,12 @@ msgid "Go to Project"
 msgstr "前往项目"
 
 #: src/components/order-service/order-service-results.html:43
-msgid "has been added to"
-msgstr "被添加到"
+msgid "has been added successfully to"
+msgstr "被成功添加到"
 
 #: src/components/create-from-builder/create-from-builder-results.html:19
-msgid "has been created in"
-msgstr "创建于"
+msgid "has been created successfully in"
+msgstr "被成功创建到"
 
 #: src/components/update-service/update-service-results.html:38
 msgid "has been updated successfully in"
@@ -314,6 +328,10 @@ msgstr ""
 msgid "My Projects"
 msgstr "我的项目"
 
+#: src/components/select-project/selectProject.html:85
+msgid "Name must have at least two characters."
+msgstr "名称至少两个字符。"
+
 #: dist/origin-web-catalogs.js:1316 dist/origin-web-catalogs.js:1319
 #: dist/origin-web-catalogs.js:1480 dist/origin-web-catalogs.js:1588
 #: dist/origin-web-catalogs.js:1590 dist/origin-web-catalogs.js:1599
@@ -350,6 +368,10 @@ msgstr "没有匹配到结果根据关键词："
 msgid "No results match."
 msgstr "没有匹配到结果。"
 
+#: src/components/select-project/selectProject.html:52
+msgid "or create"
+msgstr "或创建"
+
 #: dist/origin-web-catalogs.js:1998
 msgid "Other Projects"
 msgstr "其他项目"
@@ -367,13 +389,32 @@ msgstr "加载中"
 msgid "Plan"
 msgstr "计划"
 
+#: src/components/select-project/selectProject.html:52
+msgid "Please select"
+msgstr "请选择"
+
 #: app/components/oauth/oauth.html:7
 msgid "Please wait while you are logged in&hellip;"
 msgstr "登陆中请等待&hellip;"
 
+#: src/components/select-project/selectProject.html:113
+msgid "Project Description"
+msgstr "项目描述"
+
+#: src/components/select-project/selectProject.html:103
+msgid "Project Display Name"
+msgstr "项目显示名称"
+
 #: src/components/projects-summary/projects-summary.html:31
+#: src/components/select-project/selectProject.html:61
 msgid "Project Name"
 msgstr "项目名"
+
+#: src/components/select-project/selectProject.html:90
+msgid ""
+"Project names may only contain lower-case letters, numbers, and dashes.\n"
+"        They may not start or end with a dash."
+msgstr "项目名称由小写字母，数组，横线组成。必须以字母开头且不能以-结尾。"
 
 #: dist/origin-web-catalogs.js:1100
 msgid "Publisher"
@@ -450,11 +491,6 @@ msgstr ""
 msgid "Success"
 msgstr "成功"
 
-#: src/components/create-from-builder/create-from-builder-results.html:19
-#: src/components/order-service/order-service-results.html:43
-msgid "successfully."
-msgstr ""
-
 #: src/components/order-service/order-service-results.html:70
 msgid "Support"
 msgstr ""
@@ -495,6 +531,10 @@ msgid ""
 "remote Git repository."
 msgstr "Git URL可能不合法.检查Git URL，这是连接远程 Git 仓库的URL。"
 
+#: src/components/select-project/selectProject.html:96
+msgid "This name is already in use. Please choose a different name."
+msgstr "该名称已使用，请选择其他名称。"
+
 #: app/components/oauth/oauth.html:19
 msgid "to"
 msgstr "到"
@@ -522,7 +562,7 @@ msgstr "切换导航"
 
 #: src/components/create-from-builder/create-from-builder-configure.html:87
 msgid "Try Sample Repository"
-msgstr "尝试 Sample Repository"
+msgstr ""
 
 #: dist/origin-web-catalogs.js:2236 dist/origin-web-catalogs.js:2247
 #: dist/origin-web-catalogs.js:2349
@@ -569,3 +609,13 @@ msgstr "你将切换用户从"
 #: app/components/oauth/oauth.html:12
 msgid "You are being logged in as"
 msgstr "你正在登陆"
+
+#: src/components/select-project/selectProject.html:45
+msgid "You are not authorized to add to this project."
+msgstr "您未被授权添加项目。"
+
+#~ msgid "has been added to"
+#~ msgstr "被添加到"
+
+#~ msgid "has been created in"
+#~ msgstr "创建于"
