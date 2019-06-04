@@ -18,10 +18,10 @@
       </div>
       <ul ng-if="$ctrl.documentationUrl || $ctrl.supportUrl" class="list-inline order-service-documentation-url">
         <li ng-if="$ctrl.documentationUrl">
-          <a ng-href="{{$ctrl.documentationUrl}}" target="_blank" class="learn-more-link">View Documentation <i class="fa fa-external-link" aria-hidden="true"></i></a>
+          <a ng-href="{{$ctrl.documentationUrl}}" target="_blank" class="learn-more-link"><translate>View Documentation</translate> <i class="fa fa-external-link" aria-hidden="true"></i></a>
         </li>
         <li ng-if="$ctrl.supportUrl">
-          <a ng-href="{{$ctrl.supportUrl}}" target="_blank" class="learn-more-link">Get Support <i class="fa fa-external-link" aria-hidden="true"></i></a>
+          <a ng-href="{{$ctrl.supportUrl}}" target="_blank" class="learn-more-link"><translate>Get Support</translate> <i class="fa fa-external-link" aria-hidden="true"></i></a>
         </li>
       </ul>
     </div>
@@ -29,7 +29,7 @@
   <div class="order-service-description-block">
     <p ng-bind-html="($ctrl.istag.annotations.description | linky : '_blank') || 'No description provided.'" class="description"></p>
     <p ng-if="$ctrl.istag.annotations.sampleRepo">
-      Sample Repository:
+      <translate>Sample Repository:</translate>
       <!-- TODO: Use Git link filter, needs to be added to origin-web-common -->
       <span ng-bind-html="$ctrl.istag.annotations.sampleRepo | linky : '_blank'"></span>
     </p>

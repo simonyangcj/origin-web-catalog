@@ -2,10 +2,10 @@
   <div ng-if="!$ctrl.success && !$ctrl.error">
     <div class="results-status">
       <span class="fa fa-clock-o text-muted" aria-hidden="true"></span>
-      <span class="sr-only">Pending</span>
+      <span class="sr-only" translate>Pending</span>
       <div class="results-message">
         <h3>
-          <strong>{{$ctrl.name}}</strong> is being created in <strong>{{$ctrl.selectedProject | displayName}}</strong>.
+          <strong>{{$ctrl.name}}</strong> <translate>is being created in</translate> <strong>{{$ctrl.selectedProject | displayName}}</strong>.
         </h3>
       </div>
     </div>
@@ -13,10 +13,10 @@
   <div ng-if="$ctrl.success">
     <div class="results-status">
       <span class="pficon pficon-ok" aria-hidden="true"></span>
-      <span class="sr-only">Success</span>
+      <span class="sr-only" translate>Success</span>
       <div class="results-message">
         <h3>
-          <strong>{{$ctrl.name}}</strong> has been created in <strong>{{$ctrl.selectedProject | displayName}}</strong> successfully.
+          <strong>{{$ctrl.name}}</strong> <translate>has been created in</translate> <strong>{{$ctrl.selectedProject | displayName}}</strong> <translate>successfully.</translate>
         </h3>
       </div>
     </div>
@@ -32,7 +32,7 @@
   </div>
   <div ng-if="$ctrl.success">
     <p ng-if="!$ctrl.serviceToBind || $ctrl.bindComplete">
-      <a ng-href="{{$ctrl.selectedProject | projectUrl : $ctrl.baseProjectUrl}}" ng-click="$ctrl.closePanel()">Continue to the project overview</a> to check the status of your application as it builds and deploys.
+      <a ng-href="{{$ctrl.selectedProject | projectUrl : $ctrl.baseProjectUrl}}" ng-click="$ctrl.closePanel()" translate>Continue to the project overview</a> <translate>to check the status of your application as it builds and deploys.</translate>
     </p>
   </div>
   <div class="results-failure" ng-if="$ctrl.error">
@@ -40,7 +40,7 @@
       <span class="pficon pficon-error-circle-o text-danger" aria-hidden="true"></span>
       <div class="results-message">
         <h3>
-          <strong>{{$ctrl.name}}</strong> failed to create in <strong>{{$ctrl.selectedProject | displayName}}</strong>.
+          <strong>{{$ctrl.name}}</strong> <translate>failed to create in</translate> <strong>{{$ctrl.selectedProject | displayName}}</strong>.
         </h3>
       </div>
     </div>
@@ -48,7 +48,7 @@
       <span ng-if="$ctrl.error.data.message">
         {{$ctrl.error.data.message | upperFirst}}
       </span>
-      <span ng-if="!$ctrl.error.data.message">
+      <span ng-if="!$ctrl.error.data.message" translate>
         An error occurred creating the application.
       </span>
     </div>

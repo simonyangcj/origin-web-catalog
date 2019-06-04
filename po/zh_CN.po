@@ -1,32 +1,583 @@
 msgid ""
 msgstr ""
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
-"Language-Team: \n"
-"MIME-Version: 1.0\n"
-"X-Generator: Poedit 2.2.3\n"
 "Last-Translator: \n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language-Team: \n"
 "Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.3\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
-#: dist/origin-web-catalogs.js:2119
+#: src/components/order-service/order-service-results.html:63
+msgid "- or -"
+msgstr ""
+
+#: src/decorators/bootstrap/array.html:24
+msgid "{{ form.add || 'Add'}}"
+msgstr ""
+
+#: src/components/projects-summary/projects-summary.html:18
+msgid "A cluster admin can create a project for you by running the command:"
+msgstr ""
+
+#: src/components/create-from-builder/create-from-builder-configure.html:112
+msgid "advanced options"
+msgstr ""
+
+#: src/components/create-from-builder/create-from-builder-results.html:51
+msgid "An error occurred creating the application."
+msgstr ""
+
+#: src/components/order-service/order-service-results.html:34
+msgid "An error occurred provisioning the service."
+msgstr ""
+
+#: src/components/update-service/update-service-results.html:27
+msgid "An error occurred updating the service."
+msgstr ""
+
+#: src/components/create-from-builder/create-from-builder-configure.html:27
+msgid "Application Name"
+msgstr ""
+
+#: src/components/create-from-builder/create-from-builder-configure.html:65
+msgid "Application name can't be more than 24 characters."
+msgstr ""
+
+#: src/components/create-from-builder/create-from-builder-configure.html:56
+msgid ""
+"Application name consists of lower-case letters, numbers, and dashes. It "
+"must start with a letter and can't end with a"
+msgstr ""
+
+#: src/components/create-from-builder/create-from-builder-configure.html:50
+msgid "Application name is required."
+msgstr ""
+
+#: src/components/create-from-builder/create-from-builder-configure.html:60
+msgid "Application name must be at least 2 characters."
+msgstr ""
+
+#: src/components/services-view/services-view.html:48
+#: src/components/services-view/services-view.html:70
+msgid "Back"
+msgstr ""
+
+#: dist/origin-web-catalogs.js:1375 dist/origin-web-catalogs.js:1693
+msgid "Binding"
+msgstr ""
+
+#: dist/origin-web-catalogs.js:2124
 msgid "Browse Catalog"
 msgstr "浏览目录"
+
+#: src/components/order-service/order-service-results.html:64
+msgid "Browse resources for {{$ctrl.serviceClass.name}}:"
+msgstr ""
+
+#: src/components/projects-summary/projects-summary.html:95
+msgid "by"
+msgstr ""
+
+#: app/components/oauth/oauth.html:14 app/components/oauth/oauth.html:22
+msgid "Cancel"
+msgstr ""
+
+#: src/components/catalog-search/catalog-search.html:4
+#: src/components/catalog-search/catalog-search.html:8
+msgid "Catalog Search"
+msgstr ""
+
+#: dist/origin-web-catalogs.js:2131
+msgid "Clear All Filters"
+msgstr ""
+
+#: src/components/catalog-search/catalog-search.html:35
+msgid "Clear Search Input"
+msgstr ""
+
+#: dist/origin-web-catalogs.js:1327 dist/origin-web-catalogs.js:1611
+#: dist/origin-web-catalogs.js:2249 src/decorators/bootstrap/array.html:15
+msgid "Close"
+msgstr ""
+
+#: dist/origin-web-catalogs.js:1318 dist/origin-web-catalogs.js:1366
+#: dist/origin-web-catalogs.js:1503 dist/origin-web-catalogs.js:1592
+#: dist/origin-web-catalogs.js:1624 dist/origin-web-catalogs.js:1684
+#: dist/origin-web-catalogs.js:2305
+msgid "Configuration"
+msgstr ""
+
+#: app/components/oauth/oauth.html:11
+msgid "Confirm Login"
+msgstr ""
+
+#: app/components/oauth/oauth.html:18
+msgid "Confirm User Change"
+msgstr ""
+
+#: app/components/oauth/oauth.html:13
+msgid "Continue"
+msgstr ""
+
+#: src/components/create-from-builder/create-from-builder-results.html:35
+#: src/components/order-service/order-service-results.html:18
+#: src/components/order-service/order-service-results.html:57
+#: src/components/order-service/order-service-results.html:60
+msgid "Continue to the project overview"
+msgstr ""
+
+#: dist/origin-web-catalogs.js:1319 dist/origin-web-catalogs.js:1324
+#: dist/origin-web-catalogs.js:1480 dist/origin-web-catalogs.js:1599
+#: dist/origin-web-catalogs.js:1605 dist/origin-web-catalogs.js:1729
+#: dist/origin-web-catalogs.js:1773
+msgid "Create"
+msgstr ""
+
+#: dist/origin-web-catalogs.js:2060
+#: src/components/projects-summary/projects-summary.html:7
+#, fuzzy
+#| msgid "Select from Project"
+msgid "Create Project"
+msgstr "从项目中选择"
+
+#: src/components/projects-summary/projects-summary.html:94
+msgid "created"
+msgstr ""
+
+#: src/components/services-view/services-view.html:12
+msgid "Custom Add"
+msgstr ""
+
+#: src/components/projects-summary/projects-summary.html:75
+#, fuzzy
+#| msgid "Select from Project"
+msgid "Delete Project"
+msgstr "从项目中选择"
 
 #: src/components/services-view/services-view.html:18
 #: src/components/services-view/services-view.html:32
 msgid "Deploy Image"
 msgstr "部署镜像"
 
+#: src/components/order-service/order-service-results.html:67
+msgid "Documentation"
+msgstr ""
+
+#: src/components/projects-summary/projects-summary.html:72
+msgid "Edit Project"
+msgstr ""
+
+#: app/pages/error/error-page.html:2
+#: src/components/order-service/order-service-results.html:25
+#: src/components/update-service/update-service-results.html:16
+msgid "Error"
+msgstr ""
+
+#: src/components/create-from-builder/create-from-builder-results.html:43
+msgid "failed to create in"
+msgstr ""
+
+#: dist/origin-web-catalogs.js:1896 dist/origin-web-catalogs.js:2022
+msgid "Failed to determine create project permission"
+msgstr ""
+
+#: dist/origin-web-catalogs.js:1342
+msgid "Failed to list instances in namespace"
+msgstr ""
+
+#: src/components/order-service/order-service-results.html:28
+msgid "failed to provision in"
+msgstr ""
+
+#: dist/origin-web-catalogs.js:1083
+msgid "Filter by Keyword"
+msgstr "按关键词过滤"
+
+#: dist/origin-web-catalogs.js:2054
+msgid "Filter projects by name"
+msgstr ""
+
+#: src/components/create-from-builder/create-from-builder-info.html:24
+#: src/components/order-service/order-service-info.html:24
+msgid "Get Support"
+msgstr ""
+
+#: src/components/projects-summary/projects-summary.html:109
+#: src/components/projects-summary/projects-summary.html:12
+msgid "Getting Started"
+msgstr ""
+
+#: src/components/create-from-builder/create-from-builder-configure.html:74
+msgid "Git Repository"
+msgstr ""
+
+#: src/components/create-from-builder/create-from-builder-configure.html:91
+msgid "Git repository is required."
+msgstr ""
+
+#: src/components/projects-summary/projects-summary.html:49
+#, fuzzy
+#| msgid "Select from Project"
+msgid "Go to Project"
+msgstr "从项目中选择"
+
+#: src/components/order-service/order-service-results.html:43
+msgid "has been added to"
+msgstr ""
+
+#: src/components/create-from-builder/create-from-builder-results.html:19
+msgid "has been created in"
+msgstr ""
+
+#: src/components/update-service/update-service-results.html:38
+msgid "has been updated successfully in"
+msgstr ""
+
+#: app/components/navigation/navigation.html:18
+msgid "Help"
+msgstr ""
+
+#: app/components/navigation/navigation.html:23
+msgid "Home Page Tour"
+msgstr ""
+
+#: app/components/oauth/oauth.html:20
+msgid ""
+"If this is unexpected, click Cancel. This could be an attempt to trick you "
+"into acting as another user."
+msgstr ""
+
+#: src/components/create-from-builder/create-from-builder-configure.html:111
+msgid ""
+"If you have a private Git repository or need to change application defaults, "
+"view"
+msgstr ""
+
+#: src/components/order-service/order-service-info.html:44
+msgid "Image"
+msgstr ""
+
+#: src/components/order-service/order-service-info.html:41
+msgid "Image Dependencies"
+msgstr ""
+
 #: src/components/services-view/services-view.html:21
 #: src/components/services-view/services-view.html:35
 msgid "Import YAML / JSON"
 msgstr "导入YAML/JSON"
 
+#: dist/origin-web-catalogs.js:1357 dist/origin-web-catalogs.js:1394
+#: dist/origin-web-catalogs.js:1667 dist/origin-web-catalogs.js:1721
+msgid "Information"
+msgstr ""
+
+#: src/components/create-from-builder/create-from-builder-results.html:8
+msgid "is being created in"
+msgstr ""
+
+#: src/components/order-service/order-service-results.html:9
+msgid "is being provisioned in"
+msgstr ""
+
+#: src/components/update-service/update-service-results.html:8
+msgid "is being updated in"
+msgstr ""
+
+#: dist/origin-web-catalogs.js:2113
+msgid "Items"
+msgstr ""
+
+#: dist/origin-web-catalogs.js:1082
+msgid "Keyword"
+msgstr ""
+
+#: src/components/saas-list/saas-list.html:22
+msgid "Less"
+msgstr ""
+
+#: app/pages/logout/logout-page.html:4
+msgid "Log out"
+msgstr ""
+
+#: app/components/oauth/oauth.html:6
+msgid "Logging in&hellip;"
+msgstr ""
+
+#: app/components/navigation/navigation.html:41
+msgid "Logout"
+msgstr ""
+
+#: src/components/saas-list/saas-list.html:22
+msgid "More"
+msgstr ""
+
+#: src/components/projects-summary/projects-summary.html:14
+msgid "My Projects"
+msgstr ""
+
+#: dist/origin-web-catalogs.js:1316 dist/origin-web-catalogs.js:1319
+#: dist/origin-web-catalogs.js:1480 dist/origin-web-catalogs.js:1588
+#: dist/origin-web-catalogs.js:1590 dist/origin-web-catalogs.js:1599
+#: dist/origin-web-catalogs.js:1729 dist/origin-web-catalogs.js:1773
+#: dist/origin-web-catalogs.js:2236 dist/origin-web-catalogs.js:2349
+msgid "Next >"
+msgstr ""
+
+#: dist/origin-web-catalogs.js:2136
+msgid "No catalog items have been loaded."
+msgstr ""
+
+#: src/components/order-service/order-service-info.html:37
+msgid "No description provided."
+msgstr ""
+
+#: dist/origin-web-catalogs.js:2135
+msgid "No items."
+msgstr ""
+
+#: src/components/select-plan/selectPlan.html:18
+msgid "No Plans Available"
+msgstr ""
+
+#: dist/origin-web-catalogs.js:2015
+msgid "No Projects Found"
+msgstr ""
+
+#: dist/origin-web-catalogs.js:1292
+msgid "No results found for Keyword:"
+msgstr ""
+
+#: dist/origin-web-catalogs.js:2128
+msgid "No results match."
+msgstr ""
+
+#: dist/origin-web-catalogs.js:1998
+#, fuzzy
+#| msgid "Select from Project"
+msgid "Other Projects"
+msgstr "从项目中选择"
+
+#: dist/origin-web-catalogs.js:1702
+msgid "Parameters"
+msgstr ""
+
+#: src/components/create-from-builder/create-from-builder-results.html:5
+#: src/components/order-service/order-service-results.html:6
+msgid "Pending"
+msgstr ""
+
+#: dist/origin-web-catalogs.js:1676
+msgid "Plan"
+msgstr ""
+
+#: app/components/oauth/oauth.html:7
+msgid "Please wait while you are logged in&hellip;"
+msgstr ""
+
+#: src/components/projects-summary/projects-summary.html:31
+msgid "Project Name"
+msgstr ""
+
+#: dist/origin-web-catalogs.js:1100
+msgid "Publisher"
+msgstr "发布者"
+
+#: dist/origin-web-catalogs.js:1998
+#: src/components/projects-summary/projects-summary.html:124
+msgid "Recently Viewed"
+msgstr ""
+
+#: dist/origin-web-catalogs.js:1328 dist/origin-web-catalogs.js:1384
+#: dist/origin-web-catalogs.js:1610 dist/origin-web-catalogs.js:1711
+#: dist/origin-web-catalogs.js:2314
+msgid "Results"
+msgstr ""
+
+#: dist/origin-web-catalogs.js:1300
+msgid "results for Keyword:"
+msgstr ""
+
+#: app/pages/error/error-page.html:10
+msgid "Return to the"
+msgstr ""
+
+#: src/decorators/bootstrap/default.html:58
+msgid "Retype"
+msgstr ""
+
+#: src/components/create-from-builder/create-from-builder-info.html:32
+msgid "Sample Repository:"
+msgstr ""
+
+#: src/components/catalog-search/catalog-search.html:13
+#: src/components/catalog-search/catalog-search.html:21
+#, fuzzy
+#| msgid "Browse Catalog"
+msgid "Search Catalog"
+msgstr "浏览目录"
+
+#: dist/origin-web-catalogs.js:2138
+msgid "See Loading the Default Image Streams and Templates"
+msgstr ""
+
+#: src/components/select-plan/selectPlan.html:2
+msgid "Select a Plan"
+msgstr ""
+
 #: src/components/services-view/services-view.html:24
 #: src/components/services-view/services-view.html:38
 msgid "Select from Project"
 msgstr "从项目中选择"
+
+#: dist/origin-web-catalogs.js:2067
+#, fuzzy
+#| msgid "Select from Project"
+msgid "Select or create project"
+msgstr "从项目中选择"
+
+#: dist/origin-web-catalogs.js:2056
+#, fuzzy
+#| msgid "Select from Project"
+msgid "Select project"
+msgstr "从项目中选择"
+
+#: src/components/order-service/order-service-results.html:73
+msgid "Service Dashboard"
+msgstr ""
+
+#: dist/origin-web-catalogs.js:2016
+msgid "Services cannot be provisioned without a project."
+msgstr ""
+
+#: src/components/saas-list/saas-list.html:22
+msgid "Show"
+msgstr ""
+
+#: src/components/create-from-builder/create-from-builder-results.html:16
+#: src/components/order-service/order-service-results.html:40
+#: src/components/update-service/update-service-results.html:35
+msgid "Success"
+msgstr ""
+
+#: src/components/create-from-builder/create-from-builder-results.html:19
+#: src/components/order-service/order-service-results.html:43
+msgid "successfully."
+msgstr ""
+
+#: src/components/order-service/order-service-results.html:70
+msgid "Support"
+msgstr ""
+
+#: app/components/oauth/oauth.html:21
+msgid "Switch Users"
+msgstr ""
+
+#: src/components/projects-summary/projects-summary.html:112
+msgid "Take Home Page Tour"
+msgstr ""
+
+#: dist/origin-web-catalogs.js:2129
+msgid "The active filters are hiding all catalog items."
+msgstr ""
+
+#: src/components/order-service/order-service-results.html:12
+msgid "The binding will be created after the service has been provisioned."
+msgstr ""
+
+#: src/components/projects-summary/projects-summary.html:26
+msgid ""
+"The complete list of your projects could not be loaded. Type a project name "
+"to go to that project."
+msgstr ""
+
+#: src/components/select-plan/selectPlan.html:21
+msgid "There are no plans currently available for this service."
+msgstr ""
+
+#: src/components/order-service/order-service-results.html:13
+msgid "This may take several minutes."
+msgstr ""
+
+#: src/components/create-from-builder/create-from-builder-configure.html:96
+msgid ""
+"This might not be a valid Git URL. Check that it is the correct URL to a "
+"remote Git repository."
+msgstr ""
+
+#: app/components/oauth/oauth.html:19
+msgid "to"
+msgstr ""
+
+#: src/components/order-service/order-service-results.html:60
+msgid ""
+"to bind this service to your application. Binding this service creates a "
+"secret containing the information necessary for your application to use the "
+"service."
+msgstr ""
+
+#: src/components/create-from-builder/create-from-builder-results.html:35
+msgid "to check the status of your application as it builds and deploys."
+msgstr ""
+
+#: src/components/order-service/order-service-results.html:18
+msgid "to check the status of your service."
+msgstr ""
+
+#: app/components/navigation/navigation.html:4
+msgid "Toggle navigation"
+msgstr ""
+
+#: src/components/create-from-builder/create-from-builder-configure.html:87
+msgid "Try Sample Repository"
+msgstr ""
+
+#: dist/origin-web-catalogs.js:2236 dist/origin-web-catalogs.js:2247
+#: dist/origin-web-catalogs.js:2349
+msgid "Update"
+msgstr ""
+
+#: src/components/update-service/update-service-results.html:5
+msgid "Updating"
+msgstr ""
+
+#: src/decorators/bootstrap/default.html:69
+msgid "values don't match."
+msgstr ""
+
+#: src/components/create-from-builder/create-from-builder-configure.html:8
+msgid "Version"
+msgstr ""
+
+#: dist/origin-web-catalogs.js:1300
+msgid "View all"
+msgstr ""
+
+#: src/components/projects-summary/projects-summary.html:62
+msgid "View All"
+msgstr ""
+
+#: src/components/create-from-builder/create-from-builder-info.html:21
+#: src/components/order-service/order-service-info.html:21
+msgid "View Documentation"
+msgstr ""
+
+#: src/components/projects-summary/projects-summary.html:71
+msgid "View Membership"
+msgstr ""
+
+#: dist/origin-web-catalogs.js:1296
+msgid "View the result for Keyword:"
+msgstr ""
+
+#: app/components/oauth/oauth.html:19
+msgid "You are about to change users from"
+msgstr ""
+
+#: app/components/oauth/oauth.html:12
+msgid "You are being logged in as"
+msgstr ""

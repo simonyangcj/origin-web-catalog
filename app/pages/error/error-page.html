@@ -1,5 +1,5 @@
 <div class="main-container">
-    <h1>Error</h1>
+    <h1 translate>Error</h1>
     <h4>{{$ctrl.errorMessage}}</h4>
     <div>{{$ctrl.errorDetails}}</div>
     <div ng-if="$ctrl.errorLinks.length">
@@ -7,5 +7,5 @@
         <span ng-repeat-end ng-if="!$last" class="action-divider mar-right-xs">|</span>
     </div>
     <br>
-    <div>Return to the <a href="" ng-click="$ctrl.reloadConsole()">console</a>.</div>
+    <div><translate>Return to the</translate> <a href="" ng-click="$ctrl.reloadConsole()">console</a>.</div>
 </div>

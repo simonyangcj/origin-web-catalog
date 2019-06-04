@@ -10,7 +10,8 @@ export class SelectProjectController implements angular.IController {
     'KeywordService',
     'Logger',
     'ProjectsService',
-    'RecentlyViewedProjectsService'
+    'RecentlyViewedProjectsService',
+    'gettextCatalog'
   ];
 
   static readonly LARGE_PROJECT_LIST_SIZE = 500;
@@ -30,6 +31,7 @@ export class SelectProjectController implements angular.IController {
   private largeProjectList: boolean;
   private lastSearch: string;
   private lastResults: any;
+  private gettextCatalog: any;
 
   constructor($filter: any,
               $scope: any,
@@ -38,7 +40,8 @@ export class SelectProjectController implements angular.IController {
               KeywordService: any,
               Logger: any,
               ProjectsService: any,
-              RecentlyViewedProjectsService: any) {
+              RecentlyViewedProjectsService: any,
+              gettextCatalog: any) {
     this.$filter = $filter;
     this.$scope = $scope;
     this.AuthService = AuthService;
@@ -47,6 +50,7 @@ export class SelectProjectController implements angular.IController {
     this.Logger = Logger;
     this.ProjectsService = ProjectsService;
     this.RecentlyViewedProjectsService = RecentlyViewedProjectsService;
+    this.gettextCatalog = gettextCatalog;
 
     this.largeProjectList = false;
     this.lastSearch = "";
@@ -57,8 +61,8 @@ export class SelectProjectController implements angular.IController {
     this.ctrl.noProjectsCantCreate = false;
 
     this.ctrl.noProjectsConfig = {
-      title: 'No Projects Found',
-      info: "Services cannot be provisioned without a project."
+      title: this.gettextCatalog.getString('No Projects Found'),
+      info: this.gettextCatalog.getString("Services cannot be provisioned without a project.")
     };
 
     if (this.ctrl.showDivider === undefined) {
@@ -80,7 +84,7 @@ export class SelectProjectController implements angular.IController {
       // 403 Forbidden indicates the user doesn't have authority.
       // Any other failure status is an unexpected error.
       if (result.status !== 403) {
-        var msg = 'Failed to determine create project permission';
+        var msg = this.gettextCatalog.getString('Failed to determine create project permission');
         if (result.status !== 0) {
           msg += " (" + result.status + ")";
         }
@@ -166,10 +170,10 @@ export class SelectProjectController implements angular.IController {
     }
 
     if (this.RecentlyViewedProjectsService.isRecentlyViewed(item.metadata.uid)) {
-      return "Recently Viewed";
+      return this.gettextCatalog.getString("Recently Viewed");
     }
 
-    return "Other Projects";
+    return this.gettextCatalog.getString("Other Projects");
   };
 
   public refreshChoices = (search: string) => {
@@ -226,7 +230,7 @@ export class SelectProjectController implements angular.IController {
   private updateProjects(projects: any) {
     this.largeProjectList = _.size(projects) >= SelectProjectController.LARGE_PROJECT_LIST_SIZE;
     if (this.largeProjectList) {
-      this.ctrl.placeholder = 'Filter projects by name';
+      this.ctrl.placeholder = this.gettextCatalog.getString('Filter projects by name');
       this.ctrl.searchEnabled = true;
       this.ctrl.refreshDelay = 500;
       this.projects = projects;
@@ -236,13 +240,13 @@ export class SelectProjectController implements angular.IController {
       return;
     }
 
-    this.ctrl.placeholder = 'Select project';
+    this.ctrl.placeholder = this.gettextCatalog.getString('Select project');
 
     // 'Create Project' placeholder obj in the dropdown
     let createProject = {
       "metadata": {
         "annotations": {
-          "openshift.io/display-name": "Create Project",
+          "openshift.io/display-name": this.gettextCatalog.getString("Create Project"),
           "new-display-name": ""
         }
       }
@@ -261,7 +265,7 @@ export class SelectProjectController implements angular.IController {
     this.preselectProject();
 
     if (this.ctrl.canCreate && !this.ctrl.hideCreateProject) {
-      this.ctrl.placeholder = 'Select or create project';
+      this.ctrl.placeholder = this.gettextCatalog.getString('Select or create project');
       this.projects.unshift(createProject);
       if (_.size(this.projects) === 1) {
         this.ctrl.selectedProject = createProject;

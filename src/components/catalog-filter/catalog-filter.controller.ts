@@ -2,24 +2,28 @@ import * as angular from 'angular';
 import * as _ from 'lodash';
 
 export class CatalogFilterController implements angular.IController {
-  static $inject = ['$scope', '$timeout', 'Catalog'];
+  static $inject = ['$scope', '$timeout', 'Catalog', 'gettext', 'gettextCatalog'];
 
   public ctrl: any = this;
   private $scope: any;
   private $timeout: any;
   private Catalog: any;
   private removeClearFilterListener: any;
+  private gettext: any;
+  private gettextCatalog: any;
 
-  constructor($scope: any, $timeout: any, Catalog: any) {
+  constructor($scope: any, $timeout: any, Catalog: any, gettext: any, gettextCatalog: any) {
     this.$scope = $scope;
     this.$timeout = $timeout;
     this.Catalog = Catalog;
+    this.gettext = gettext;
+    this.gettextCatalog = gettextCatalog;
 
     this.ctrl.filterPanelModel = [];
     this.ctrl.keywordFilter = {
       id: 'keyword',
-      title:  'Keyword',
-      placeholder: 'Filter by Keyword',
+      title:  this.gettextCatalog.getString('Keyword'),
+      placeholder: this.gettextCatalog.getString('Filter by Keyword'),
       filterType: 'text',
       values: []
     };
@@ -51,7 +55,7 @@ export class CatalogFilterController implements angular.IController {
         if (!this.ctrl.VendorFilter) {
           this.ctrl.VendorFilter = {
             id: 'vendors',
-            title: 'Publisher',
+            title: this.gettextCatalog.getString('Publisher'),
             filterType: 'checkbox',
             values: this.getVendorValues(this.ctrl.vendors)
           };

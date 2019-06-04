@@ -13,7 +13,8 @@ export class OrderServiceController implements angular.IController {
     'BindingService',
     'Logger',
     'Constants',
-    'DNS1123_SUBDOMAIN_VALIDATION'
+    'DNS1123_SUBDOMAIN_VALIDATION',
+    'gettextCatalog'
   ];
 
   public ctrl: any = this;
@@ -38,6 +39,7 @@ export class OrderServiceController implements angular.IController {
   private validityWatcher: any;
   private noProjectsCantCreateWatch: any;
   private DNS1123_SUBDOMAIN_VALIDATION: any;
+  private gettextCatalog: any;
 
   constructor($scope: any,
               $filter: any,
@@ -48,7 +50,8 @@ export class OrderServiceController implements angular.IController {
               BindingService: any,
               Logger: any,
               Constants: any,
-              DNS1123_SUBDOMAIN_VALIDATION: any) {
+              DNS1123_SUBDOMAIN_VALIDATION: any,
+              gettextCatalog: any) {
     this.$scope = $scope;
     this.$filter = $filter;
     this.APIService = APIService;
@@ -59,6 +62,7 @@ export class OrderServiceController implements angular.IController {
     this.Logger = Logger;
     this.ctrl.showPodPresets = _.get(Constants, ['ENABLE_TECH_PREVIEW_FEATURE', 'pod_presets'], false);
     this.DNS1123_SUBDOMAIN_VALIDATION = DNS1123_SUBDOMAIN_VALIDATION;
+    this.gettextCatalog = gettextCatalog;
   }
 
   public $onInit() {
@@ -92,7 +96,7 @@ export class OrderServiceController implements angular.IController {
 
     this.infoStep = {
       id: 'info',
-      label: 'Information',
+      label: this.gettextCatalog.getString('Information'),
       view: 'order-service/order-service-info.html',
       valid: true,
       allowed: true,
@@ -102,7 +106,7 @@ export class OrderServiceController implements angular.IController {
     };
     this.planStep = {
       id: 'plans',
-      label: 'Plan',
+      label: this.gettextCatalog.getString('Plan'),
       view: 'order-service/order-service-plans.html',
       hidden: !this.ctrl.multipleServicePlans,
       allowed: true,
@@ -111,7 +115,7 @@ export class OrderServiceController implements angular.IController {
       onShow: this.showPlan
     };
     this.configStep = {
-      label: 'Configuration',
+      label: this.gettextCatalog.getString('Configuration'),
       id: 'configure',
       view: 'order-service/order-service-configure.html',
       hidden: false,
@@ -121,7 +125,7 @@ export class OrderServiceController implements angular.IController {
       onShow: this.showConfig
     };
     this.bindStep = {
-      label: 'Binding',
+      label: this.gettextCatalog.getString('Binding'),
       id: 'bind',
       view: 'order-service/order-service-bind.html',
       hidden: false,
@@ -131,7 +135,7 @@ export class OrderServiceController implements angular.IController {
       onShow: this.showBind
     };
     this.bindParametersStep = {
-      label: 'Parameters',
+      label: this.gettextCatalog.getString('Parameters'),
       id: 'bind-parameters',
       view: 'order-service/order-service-bind-parameters.html',
       hidden: false,
@@ -141,7 +145,7 @@ export class OrderServiceController implements angular.IController {
       onShow: this.showBindParameters
     };
     this.reviewStep = {
-      label: 'Results',
+      label: this.gettextCatalog.getString('Results'),
       id: 'results',
       view: 'order-service/order-service-results.html',
       hidden: false,
@@ -153,7 +157,7 @@ export class OrderServiceController implements angular.IController {
     };
 
     this.ctrl.steps = [this.infoStep, this.planStep, this.configStep, this.bindStep, this.bindParametersStep, this.reviewStep];
-    this.ctrl.currentStep = "Information";
+    this.ctrl.currentStep = this.gettextCatalog.getString("Information");
     this.ctrl.projectNameTaken = false;
     this.ctrl.wizardDone = false;
     this.ctrl.bindType = "none";
@@ -186,7 +190,7 @@ export class OrderServiceController implements angular.IController {
       }
 
       this.updateBindParametersStepVisibility();
-      this.ctrl.nextTitle = this.bindParametersStep.hidden ? 'Create' : 'Next >';
+      this.ctrl.nextTitle = this.bindParametersStep.hidden ? this.gettextCatalog.getString('Create') : this.gettextCatalog.getString('Next >');
       this.reviewStep.allowed = this.bindParametersStep.hidden && this.bindStep.valid;
     });
 
@@ -206,17 +210,17 @@ export class OrderServiceController implements angular.IController {
   public showInfo = () => {
     this.clearValidityWatcher();
     this.ctrl.configPageShown = false;
-    this.ctrl.nextTitle = "Next >";
+    this.ctrl.nextTitle = this.gettextCatalog.getString("Next >");
   };
 
   public showPlan = () => {
     this.clearValidityWatcher();
     this.ctrl.configPageShown = false;
-    this.ctrl.nextTitle = "Next >";
+    this.ctrl.nextTitle = this.gettextCatalog.getString("Next >");
   };
 
   public showConfig = () => {
-    this.ctrl.currentStep = "Configuration";
+    this.ctrl.currentStep = this.gettextCatalog.getString("Configuration");
     this.clearValidityWatcher();
     this.ctrl.configPageShown = true;
     this.reviewStep.allowed = this.bindStep.hidden && this.configStep.valid;
@@ -232,7 +236,7 @@ export class OrderServiceController implements angular.IController {
   public showBind = () => {
     this.clearValidityWatcher();
     this.ctrl.configPageShown = false;
-    this.ctrl.nextTitle = this.bindParametersStep.hidden ? 'Create' : 'Next >';
+    this.ctrl.nextTitle = this.bindParametersStep.hidden ? this.gettextCatalog.getString('Create') : this.gettextCatalog.getString('Next >');
     this.reviewStep.allowed = this.bindParametersStep.hidden && this.bindStep.valid;
 
     if (this.isNewProject()) {
@@ -250,7 +254,7 @@ export class OrderServiceController implements angular.IController {
 
   public showBindParameters = () => {
     this.clearValidityWatcher();
-    this.ctrl.nextTitle = 'Create';
+    this.ctrl.nextTitle = this.gettextCatalog.getString('Create');
     this.validityWatcher = this.$scope.$watch("$ctrl.forms.bindParametersForm.$valid", (isValid: any, lastValue: any) => {
       this.bindParametersStep.valid = isValid;
       this.reviewStep.allowed = this.bindParametersStep.valid;
@@ -258,10 +262,10 @@ export class OrderServiceController implements angular.IController {
   };
 
   public showResults = () => {
-    this.ctrl.currentStep = "Results";
+    this.ctrl.currentStep = this.gettextCatalog.getString("Results");
     this.clearValidityWatcher();
     this.ctrl.configPageShown = false;
-    this.ctrl.nextTitle = "Close";
+    this.ctrl.nextTitle = this.gettextCatalog.getString("Close");
     this.ctrl.wizardDone = true;
     this.provisionService();
   };
@@ -295,7 +299,7 @@ export class OrderServiceController implements angular.IController {
           if (e.data.reason === 'AlreadyExists') {
             this.ctrl.projectNameTaken = true;
             this.ctrl.wizardDone = false;
-            this.ctrl.currentStep = "Configuration";
+            this.ctrl.currentStep = this.gettextCatalog.getString("Configuration");
           } else {
             this.ctrl.error = e;
           }
@@ -394,9 +398,9 @@ export class OrderServiceController implements angular.IController {
       this.reviewStep.allowed = this.bindStep.hidden;
 
       if (this.bindStep.hidden) {
-        this.ctrl.nextTitle = "Create";
+        this.ctrl.nextTitle = this.gettextCatalog.getString("Create");
       } else {
-        this.ctrl.nextTitle = "Next >";
+        this.ctrl.nextTitle = this.gettextCatalog.getString("Next >");
       }
     }
   }

@@ -12,7 +12,7 @@ $ npm run build
 2. add translate for html files, add gettext/gettextCatalog.getString for ts files
 3. use grunt to generate pot file
 $ grunt --gruntfile Gruntfile.translate.js
-4. edit po file to generate po file
+4. edit pot file to generate po file by peodit
 5. use grunt to generate translations-catalog.js file
 $ grunt --gruntfile Gruntfile.translate.js
 6. replace dist/orgin-web-catalog.js to origin-web-console/bower_components/origin-web-catalog/dist/orgin-web-catalog.js

@@ -15,7 +15,8 @@ export class CreateFromBuilderController implements angular.IController {
     'DataService',
     'Logger',
     'ProjectsService',
-    'VersionsService'];
+    'VersionsService',
+    'gettextCatalog'];
   public ctrl: any = this;
 
   private $filter: any;
@@ -40,6 +41,7 @@ export class CreateFromBuilderController implements angular.IController {
   private validityWatcher: any;
   private gitRef: string;
   private contextDir: string;
+  private gettextCatalog: any;
 
   constructor($filter: any,
               $location: ng.ILocationService,
@@ -52,7 +54,8 @@ export class CreateFromBuilderController implements angular.IController {
               DataService: any,
               Logger: any,
               ProjectsService: any,
-              VersionsService: any) {
+              VersionsService: any,
+              gettextCatalog: any) {
     this.$scope = $scope;
     this.$filter = $filter;
     this.$location = $location;
@@ -68,13 +71,14 @@ export class CreateFromBuilderController implements angular.IController {
     this.ctrl.showPodPresets = _.get(Constants, ['ENABLE_TECH_PREVIEW_FEATURE', 'pod_presets'], false);
     this.gitRef = '';
     this.contextDir = '';
+    this.gettextCatalog = gettextCatalog;
   }
 
   public $onInit() {
     this.ctrl.selectedProject = this.ctrl.addToProject;
 
     this.infoStep = {
-      label: 'Information',
+      label: this.gettextCatalog.getString('Information'),
       id: 'info',
       view: 'create-from-builder/create-from-builder-info.html',
       valid: true,
@@ -84,7 +88,7 @@ export class CreateFromBuilderController implements angular.IController {
       onShow: this.showInfo
     };
     this.configStep = {
-      label: 'Configuration',
+      label: this.gettextCatalog.getString('Configuration'),
       id: 'configure',
       view: 'create-from-builder/create-from-builder-configure.html',
       valid: false,
@@ -94,7 +98,7 @@ export class CreateFromBuilderController implements angular.IController {
       onShow: this.showConfig
     };
     this.bindStep = {
-      label: 'Binding',
+      label: this.gettextCatalog.getString('Binding'),
       id: 'bind',
       view: 'create-from-builder/create-from-builder-bind.html',
       valid: true,
@@ -104,7 +108,7 @@ export class CreateFromBuilderController implements angular.IController {
       onShow: this.showBind
     };
     this.reviewStep = {
-      label: 'Results',
+      label: this.gettextCatalog.getString('Results'),
       id: 'results',
       view: 'create-from-builder/create-from-builder-results.html',
       valid: true,
@@ -115,7 +119,7 @@ export class CreateFromBuilderController implements angular.IController {
       onShow: this.showResults
     };
     this.ctrl.steps = [this.infoStep, this.configStep, this.bindStep, this.reviewStep];
-    this.ctrl.currentStep = "Information";
+    this.ctrl.currentStep = this.gettextCatalog.getString("Information");
     this.ctrl.versions = this.getVersions();
     this.ctrl.istag = _.head(this.ctrl.versions);
     this.ctrl.nameMaxLength = 24;
@@ -244,13 +248,13 @@ export class CreateFromBuilderController implements angular.IController {
 
   private showInfo = () => {
     this.clearValidityWatcher();
-    this.ctrl.nextTitle = 'Next >';
+    this.ctrl.nextTitle = this.gettextCatalog.getString('Next >');
   };
 
   private showConfig = () => {
-    this.ctrl.currentStep = "Configuration";
+    this.ctrl.currentStep = this.gettextCatalog.getString("Configuration");
     this.clearValidityWatcher();
-    this.ctrl.nextTitle = this.bindStep.hidden ? 'Create' : 'Next >';
+    this.ctrl.nextTitle = this.bindStep.hidden ? this.gettextCatalog.getString('Create') : this.gettextCatalog.getString('Next >');
     this.reviewStep.allowed = this.bindStep.hidden && this.configStep.valid;
 
     this.validityWatcher = this.$scope.$watch("$ctrl.builderForm.$valid", (isValid: any, lastValue: any) => {
@@ -263,15 +267,15 @@ export class CreateFromBuilderController implements angular.IController {
 
   private showBind = () => {
     this.clearValidityWatcher();
-    this.ctrl.nextTitle = 'Create';
+    this.ctrl.nextTitle = this.gettextCatalog.getString('Create');
     this.reviewStep.allowed = true;
   };
 
   private showResults = () => {
     this.clearValidityWatcher();
-    this.ctrl.nextTitle = 'Close';
+    this.ctrl.nextTitle = this.gettextCatalog.getString('Close');
     this.ctrl.wizardDone = true;
-    this.ctrl.currentStep = "Results";
+    this.ctrl.currentStep = this.gettextCatalog.getString("Results");
 
     this.createApp();
   };
@@ -382,9 +386,9 @@ export class CreateFromBuilderController implements angular.IController {
     this.bindStep.hidden = _.size(this.ctrl.serviceInstances) < 1;
     this.ctrl.serviceToBind = null;
     if (this.bindStep.hidden) {
-      this.ctrl.nextTitle = "Create";
+      this.ctrl.nextTitle = this.gettextCatalog.getString("Create");
     } else {
-      this.ctrl.nextTitle = "Next >";
+      this.ctrl.nextTitle = this.gettextCatalog.getString("Next >");
     }
   }
 
@@ -405,7 +409,7 @@ export class CreateFromBuilderController implements angular.IController {
         this.ctrl.updating = false;
         this.updateBindability();
       }, (result) => {
-        this.Logger.warn('Failed to list instances in namespace ' + this.ctrl.selectedProject.metadata.name, result);
+        this.Logger.warn(this.gettextCatalog.getString('Failed to list instances in namespace ') + this.ctrl.selectedProject.metadata.name, result);
         this.ctrl.updating = false;
         this.ctrl.serviceInstances = [];
         this.updateBindability();
@@ -451,7 +455,7 @@ export class CreateFromBuilderController implements angular.IController {
       if (e.data.reason === 'AlreadyExists') {
         this.ctrl.projectNameTaken = true;
         this.ctrl.wizardDone = false;
-        this.ctrl.currentStep = "Configuration";
+        this.ctrl.currentStep = this.gettextCatalog.getString("Configuration");
       } else {
         this.ctrl.error = e;
       }

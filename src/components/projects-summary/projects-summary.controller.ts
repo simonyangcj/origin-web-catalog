@@ -14,7 +14,8 @@ export class ProjectsSummaryController implements angular.IController {
     'Logger',
     'ProjectsService',
     'RecentlyViewedProjectsService',
-    'RecentlyViewedServiceItems'
+    'RecentlyViewedServiceItems',
+    'gettextCatalog'
   ];
 
   static readonly MAX_PROJETS_TO_WATCH: number = 250;
@@ -37,6 +38,7 @@ export class ProjectsSummaryController implements angular.IController {
   private maxDisplayProjects: number = 5;
   private allItems: any;
   private watchingProjects: boolean = false;
+  private gettextCatalog: any;
 
   // alphabetically please
   constructor (
@@ -50,7 +52,8 @@ export class ProjectsSummaryController implements angular.IController {
       Logger: any,
       ProjectsService: any,
       RecentlyViewedProjectsService: any,
-      RecentlyViewedServiceItems: any
+      RecentlyViewedServiceItems: any,
+      gettextCatalog: any
     ) {
     this.$filter = $filter;
     this.$rootScope = $rootScope;
@@ -63,6 +66,7 @@ export class ProjectsSummaryController implements angular.IController {
     this.ProjectsService = ProjectsService;
     this.RecentlyViewedProjectsService = RecentlyViewedProjectsService;
     this.RecentlyViewedItems = RecentlyViewedServiceItems;
+    this.gettextCatalog = gettextCatalog;
   }
 
   public $onInit () {
@@ -85,7 +89,7 @@ export class ProjectsSummaryController implements angular.IController {
       // 403 Forbidden indicates the user doesn't have authority.
       // Any other failure status is an unexpected error.
       if (result.status !== 403) {
-        var msg = 'Failed to determine create project permission';
+        var msg = this.gettextCatalog.getString('Failed to determine create project permission');
         if (result.status !== 0) {
           msg += " (" + result.status + ")";
         }

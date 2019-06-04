@@ -9,7 +9,7 @@
         <ul class="add-other hidden-md hidden-lg">
           <li uib-dropdown="" class="dropdown">
             <a uib-dropdown-toggle="" class="dropdown-toggle" id="add-methods-dropdown" href="" aria-haspopup="true" aria-expanded="false">
-              Custom Add
+              <translate>Custom Add</translate>
               <span class="caret" aria-hidden="true"></span>
             </a>
             <ul class="uib-dropdown-menu dropdown-menu pull-right" aria-labelledby="add-methods-dropdown">
@@ -45,7 +45,7 @@
           ng-if="category.hasItems"
           ng-class="{ active: $ctrl.currentFilter === category.id }">
         <a href="" id="{{'category-'+category.id}}" class="services-category-heading" ng-click="$ctrl.selectCategory(category.id)">{{category.label}}</a>
-        <a ng-click="$ctrl.mobileView = 'categories'" class="services-back-link" href="">Back</a>
+        <a ng-click="$ctrl.mobileView = 'categories'" class="services-back-link" href="" translate>Back</a>
       </li>
     </ul>
 
@@ -67,7 +67,7 @@
                 ng-if="subCategory.icon && !subCategory.imageUrl && !(subCategory.icon | imageForIconClass)"></div>
             <div class="services-sub-category-tab-name">{{subCategory.label}}</div>
           </a>
-         <a ng-click="$ctrl.mobileView = 'subcategories'" class="services-back-link" href="">Back</a>
+         <a ng-click="$ctrl.mobileView = 'subcategories'" class="services-back-link" href="" translate>Back</a>
           <div ng-if="$ctrl.currentSubFilter === subCategory.id" class="services-items">
             <catalog-filter class="services-items-filter"
                             config="$ctrl.filterConfig"

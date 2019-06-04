@@ -7,7 +7,8 @@ module.exports = function (grunt) {
         files: {
           // 自动识别html中的Translate对应的字符串，放到po/template.pot文件中
           // 然后用工具，把.pot中的翻译，转到.po中
-          'po/template.pot': ['src/*/*/*.html', 
+          'po/template.pot': ['src/*/*/*.html',
+                              'app/*/*/*.html',
                               'dist/origin-web-catalogs.js'
                              ]
         }

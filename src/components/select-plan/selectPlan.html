@@ -1,5 +1,5 @@
 <div class="select-plans">
-  <h3 ng-if="$ctrl.availablePlans.length > 1">Select a Plan</h3>
+  <h3 ng-if="$ctrl.availablePlans.length > 1" translate>Select a Plan</h3>
   <div ng-if="$ctrl.availablePlans.length" ng-repeat="plan in $ctrl.availablePlans track by plan.metadata.uid" ng-class="{'radio': $ctrl.availablePlans.length > 1}">
     <label>
       <input ng-if="$ctrl.availablePlans.length > 1"
@@ -15,10 +15,10 @@
     <div class="blank-slate-pf-icon">
       <span class="pficon pficon-info"></span>
     </div>
-    <h1>
+    <h1 translate>
       No Plans Available
     </h1>
-    <p>
+    <p translate>
       There are no plans currently available for this service.
     </p>
   </div>

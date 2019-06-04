@@ -1,7 +1,7 @@
 <nav class="navbar navbar-default navbar-fixed-top navbar-pf" role="navigation">
   <div class="navbar-header">
     <button type="button" class="navbar-toggle" ng-click="$ctrl.navCollapsed = !$ctrl.navCollapsed" >
-      <span class="sr-only">Toggle navigation</span>
+      <span class="sr-only" translate>Toggle navigation</span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
@@ -15,12 +15,12 @@
       <li ng-if="$ctrl.tourConfig.enabled" uib-dropdown="" class="dropdown hidden-xs">
         <a uib-dropdown-toggle="" class="nav-item-iconic dropdown-toggle" id="help-dropdown" href="" aria-haspopup="true" aria-expanded="false">
           <span title="Help" class="fa pficon-help" aria-hidden="true"></span>
-          <span class="sr-only">Help</span>
+          <span class="sr-only" translate>Help</span>
           <span class="caret" aria-hidden="true"></span>
         </a>
         <ul class="uib-dropdown-menu ng-isolate-scope dropdown-menu" aria-labelledby="help-dropdown" extension-point="" extension-name="nav-help-dropdown" extension-types="dom html">
           <li class="ng-scope">
-            <a href="" ng-click="$ctrl.startTour()">
+            <a href="" ng-click="$ctrl.startTour()" translate>
               Home Page Tour
             </a>
           </li>
@@ -38,7 +38,7 @@
             extension-name="nav-user-dropdown"
             extension-types="dom html"><!-- extension points generated here -->
           <li>
-            <a href="" ng-click="$ctrl.doLogout()">Logout</a>
+            <a href="" ng-click="$ctrl.doLogout()" translate>Logout</a>
           </li>
         </ul>
       </li>

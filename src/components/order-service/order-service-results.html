@@ -3,44 +3,44 @@
     <div ng-if="!$ctrl.orderComplete">
       <div class="results-status">
         <span class="fa fa-clock-o text-muted" aria-hidden="true"></span>
-        <span class="sr-only">Pending</span>
+        <span class="sr-only" translate>Pending</span>
         <div class="results-message">
           <h3>
-            <strong>{{$ctrl.serviceClass.name}}</strong> is being provisioned in <strong>{{$ctrl.projectDisplayName}}</strong>.
+            <strong>{{$ctrl.serviceClass.name}}</strong> <translate>is being provisioned in</translate> <strong>{{$ctrl.projectDisplayName}}</strong>.
           </h3>
           <p class="results-message-details">
-            <span ng-if="$ctrl.binding">The binding will be created after the service has been provisioned.</span>
-            This may take several minutes.
+            <span ng-if="$ctrl.binding" translate>The binding will be created after the service has been provisioned.</span>
+            <translate> This may take several minutes.</translate>
           </p>
         </div>
       </div>
       <p>
-        <a ng-href="{{$ctrl.selectedProject | projectUrl : $ctrl.baseProjectUrl}}" ng-click="$ctrl.closePanel()">Continue to the project overview</a> to check the status of your service.
+        <a ng-href="{{$ctrl.selectedProject | projectUrl : $ctrl.baseProjectUrl}}" ng-click="$ctrl.closePanel()" translate>Continue to the project overview</a> <translate>to check the status of your service.</translate>
       </p>
     </div>
   </div>
   <div class="results-failure" ng-if="$ctrl.error">
     <div class="results-status">
       <span class="pficon pficon-error-circle-o text-danger" aria-hidden="true"></span>
-      <span class="sr-only">Error</span>
+      <span class="sr-only" translate>Error</span>
       <div class="results-message">
         <h3>
-          <strong>{{$ctrl.serviceClass.name}}</strong> failed to provision in <strong>{{$ctrl.projectDisplayName}}</strong>.
+          <strong>{{$ctrl.serviceClass.name}}</strong> <translate>failed to provision in</translate> <strong>{{$ctrl.projectDisplayName}}</strong>.
         </h3>
       </div>
     </div>
     <div class="sub-title">
       <span ng-if="$ctrl.error.message" class="error-message">{{$ctrl.error.message}}</span>
-      <span ng-if="!$ctrl.error.message" class="error-message">An error occurred provisioning the service.</span>
+      <span ng-if="!$ctrl.error.message" class="error-message" translate>An error occurred provisioning the service.</span>
     </div>
   </div>
   <div ng-if="$ctrl.orderComplete">
     <div class="results-status">
       <span class="pficon pficon-ok" aria-hidden="true"></span>
-      <span class="sr-only">Success</span>
+      <span class="sr-only" translate>Success</span>
       <div class="results-message">
         <h3>
-          <strong>{{$ctrl.serviceClass.name}}</strong> has been added to <strong>{{$ctrl.projectDisplayName}}</strong> successfully.
+          <strong>{{$ctrl.serviceClass.name}}</strong> <translate>has been added to</translate> <strong>{{$ctrl.projectDisplayName}}</strong><translate>successfully.</translate>
         </h3>
       </div>
     </div>
@@ -54,23 +54,23 @@
                   application-to-bind="$ctrl.appToBind.metadata.name"
                   show-pod-presets="$ctrl.showPodPresets">
     </bind-results>
-    <p><a ng-href="{{$ctrl.selectedProject | projectUrl : $ctrl.baseProjectUrl}}">Continue to the project overview</a>.</p>
+    <p><a ng-href="{{$ctrl.selectedProject | projectUrl : $ctrl.baseProjectUrl}}" translate>Continue to the project overview</a>.</p>
   </div>
   <div ng-if="$ctrl.orderComplete && $ctrl.bindType === 'none'">
-    <p><a ng-href="{{$ctrl.selectedProject | projectUrl : $ctrl.baseProjectUrl}}">Continue to the project overview</a> to bind this service to your application. Binding this service creates a secret containing the information necessary for your application to use the service.</p>
+    <p><a ng-href="{{$ctrl.selectedProject | projectUrl : $ctrl.baseProjectUrl}}"><translate>Continue to the project overview</translate></a><translate>to bind this service to your application. Binding this service creates a secret containing the information necessary for your application to use the service.</translate></p>
   </div>
   <div ng-if="$ctrl.serviceClass.resource.externalMetadata.documentationUrl || $ctrl.serviceClass.resource.externalMetadata.supportUrl || (!$ctrl.error && $ctrl.serviceInstance.status.dashboardURL)">
-    <p class="or" ng-if="!$ctrl.error">- or -</p>
-    <p>Browse resources for {{$ctrl.serviceClass.name}}:</p>
+    <p class="or" ng-if="!$ctrl.error" translate>- or -</p>
+    <p translate>Browse resources for {{$ctrl.serviceClass.name}}:</p>
     <ul class="list-inline">
       <li ng-if="$ctrl.serviceClass.resource.externalMetadata.documentationUrl">
-        <a ng-href="{{$ctrl.serviceClass.resource.externalMetadata.documentationUrl}}" target="_blank">Documentation <i class="fa fa-external-link" aria-hidden="true"></i></a>
+        <a ng-href="{{$ctrl.serviceClass.resource.externalMetadata.documentationUrl}}" target="_blank"><translate>Documentation</translate> <i class="fa fa-external-link" aria-hidden="true"></i></a>
       </li>
       <li ng-if="$ctrl.serviceClass.resource.externalMetadata.supportUrl">
-        <a ng-href="{{$ctrl.serviceClass.resource.externalMetadata.supportUrl}}" target="_blank">Support <i class="fa fa-external-link" aria-hidden="true"></i></a>
+        <a ng-href="{{$ctrl.serviceClass.resource.externalMetadata.supportUrl}}" target="_blank"><translate>Support</translate> <i class="fa fa-external-link" aria-hidden="true"></i></a>
       </li>
       <li ng-if="!$ctrl.error && $ctrl.serviceInstance.status.dashboardURL">
-        <a ng-href="{{$ctrl.serviceInstance.status.dashboardURL}}" target="_blank">Service Dashboard <i class="fa fa-external-link" aria-hidden="true"></i></a>
+        <a ng-href="{{$ctrl.serviceInstance.status.dashboardURL}}" target="_blank"><translate>Service Dashboard</translate> <i class="fa fa-external-link" aria-hidden="true"></i></a>
       </li>
     </ul>
   </div>

@@ -11,7 +11,8 @@ export class UpdateServiceController implements angular.IController {
     'BindingService',
     'DataService',
     'Logger',
-    'SecretsService'
+    'SecretsService',
+    'gettextCatalog'
   ];
 
   public ctrl: any = this;
@@ -36,6 +37,7 @@ export class UpdateServiceController implements angular.IController {
   private originalPlan: any;
   private context: any;
   private secrets: any = [];
+  private gettextCatalog: any;
 
   constructor($scope: any,
               $filter: any,
@@ -44,7 +46,8 @@ export class UpdateServiceController implements angular.IController {
               BindingService: any,
               DataService: any,
               Logger: any,
-              SecretsService: any) {
+              SecretsService: any,
+              gettextCatalog: any) {
     this.$scope = $scope;
     this.$filter = $filter;
     this.$q = $q;
@@ -53,6 +56,7 @@ export class UpdateServiceController implements angular.IController {
     this.DataService = DataService;
     this.Logger = Logger;
     this.SecretsService = SecretsService;
+    this.gettextCatalog = gettextCatalog;
   }
 
   public $onInit() {
@@ -74,7 +78,7 @@ export class UpdateServiceController implements angular.IController {
       onShow: this.showPlan
     };
     this.configStep = {
-      label: 'Configuration',
+      label: this.gettextCatalog.getString('Configuration'),
       id: 'configure',
       view: 'update-service/update-service-configure.html',
       hidden: false,
@@ -84,7 +88,7 @@ export class UpdateServiceController implements angular.IController {
       onShow: this.showConfig
     };
     this.reviewStep = {
-      label: 'Results',
+      label: this.gettextCatalog.getString('Results'),
       id: 'results',
       view: 'update-service/update-service-results.html',
       hidden: false,
@@ -154,9 +158,9 @@ export class UpdateServiceController implements angular.IController {
     this.ctrl.configPageShown = false;
 
     if (this.configStep.hidden) {
-      this.ctrl.nextTitle = 'Update';
+      this.ctrl.nextTitle = this.gettextCatalog.getString('Update');
     } else {
-      this.ctrl.nextTitle = "Next >";
+      this.ctrl.nextTitle = this.gettextCatalog.getString("Next >");
     }
     this.planStep.valid =  (this.ctrl.selectedPlan !== this.originalPlan) || !this.configStep.hidden;
   };
@@ -183,13 +187,13 @@ export class UpdateServiceController implements angular.IController {
       this.configStep.valid = _.get(this.ctrl, 'forms.orderConfigureForm.$valid') && this.configChanged;
     }, true);
 
-    this.ctrl.nextTitle = 'Update';
+    this.ctrl.nextTitle = this.gettextCatalog.getString('Update');
   };
 
   public showResults = () => {
     this.clearValidityWatcher();
     this.ctrl.configPageShown = false;
-    this.ctrl.nextTitle = "Close";
+    this.ctrl.nextTitle = this.gettextCatalog.getString("Close");
     this.ctrl.wizardDone = true;
     this.updateServiceConfig();
   };
@@ -307,9 +311,9 @@ export class UpdateServiceController implements angular.IController {
     this.configStep.hidden = _.size(updateProperties) < 1;
 
     if (this.configStep.hidden) {
-      this.ctrl.nextTitle = 'Update';
+      this.ctrl.nextTitle = this.gettextCatalog.getString('Update');
     } else {
-      this.ctrl.nextTitle = "Next >";
+      this.ctrl.nextTitle = this.gettextCatalog.getString("Next >");
     }
     this.planStep.valid =  (this.ctrl.selectedPlan !== this.originalPlan) || !this.configStep.hidden;
   }

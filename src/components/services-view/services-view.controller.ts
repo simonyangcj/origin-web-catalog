@@ -49,7 +49,7 @@ export class ServicesViewController implements angular.IController {
     this.ctrl.isEmpty = false;
     this.ctrl.mobileView = 'categories';
     this.ctrl.filterConfig = {
-      resultsLabel: "Items",
+      resultsLabel: this.gettextCatalog.getString("Items"),
       appliedFilters: []
     };
     this.ctrl.keywordFilterValue = null;
@@ -60,26 +60,26 @@ export class ServicesViewController implements angular.IController {
     $(window).on('resize.services', this.debounceResize);
 
     this.ctrl.currentFilter = this.ctrl.currentSubFilter = 'all';
-    this.ctrl.sectionTitle = this.ctrl.sectionTitle || this.gettextCatalog.getString('Browse Catalog');
+    this.ctrl.sectionTitle = this.ctrl.sectionTitle ||this.gettextCatalog.getString('Browse Catalog');
 
     this.removeFilterListener = this.$rootScope.$on('filter-catalog-items', (event: any, searchCriteria: any) => {
       this.setKeywordFilter(searchCriteria.searchText);
     });
 
     this.ctrl.emptyFilterConfig = {
-      title: 'No results match.',
-      info: 'The active filters are hiding all catalog items.',
+      title: this.gettextCatalog.getString('No results match.'),
+      info: this.gettextCatalog.getString('The active filters are hiding all catalog items.'),
       helpLink: {
-        urlLabel: 'Clear All Filters',
+        urlLabel: this.gettextCatalog.getString('Clear All Filters'),
         urlAction: this.clearAppliedFilters
       }
     };
 
     this.ctrl.noItemsConfig = {
-        title: 'No items.',
-        info: 'No catalog items have been loaded.',
+        title: this.gettextCatalog.getString('No items.'),
+        info: this.gettextCatalog.getString('No catalog items have been loaded.'),
         helpLink: {
-            urlLabel: 'See Loading the Default Image Streams and Templates',
+            urlLabel: this.gettextCatalog.getString('See Loading the Default Image Streams and Templates'),
             url: 'https://docs.openshift.org/latest/install_config/imagestreams_templates.html'
         }
     };

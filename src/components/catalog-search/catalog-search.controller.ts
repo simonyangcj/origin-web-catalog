@@ -3,7 +3,7 @@ import * as _ from 'lodash';
 import * as $ from 'jquery';
 
 export class CatalogSearchController implements angular.IController {
-  static $inject = ['$rootScope', '$scope', '$timeout', '$q', 'Catalog', 'Constants', 'KeywordService'];
+  static $inject = ['$rootScope', '$scope', '$timeout', '$q', 'Catalog', 'Constants', 'KeywordService', 'gettextCatalog'];
 
   public ctrl: any = this;
 
@@ -16,11 +16,12 @@ export class CatalogSearchController implements angular.IController {
   private $q: any;
   private loaded: boolean = false;
   private maxResultsToShow: number = 5;
+  private gettextCatalog: any;
 
   // Used when the user starts typing before the items have loaded.
   private searchDeferred: ng.IDeferred<any[]>;
 
-  constructor($rootScope: any, $scope: any, $timeout: any, $q: any, Catalog: any, Constants: any, KeywordService: any) {
+  constructor($rootScope: any, $scope: any, $timeout: any, $q: any, Catalog: any, Constants: any, KeywordService: any, gettextCatalog: any) {
     this.$rootScope = $rootScope;
     this.$scope = $scope;
     this.$timeout = $timeout;
@@ -28,6 +29,7 @@ export class CatalogSearchController implements angular.IController {
     this.Catalog = Catalog;
     this.Constants = Constants;
     this.KeywordService = KeywordService;
+    this.gettextCatalog = gettextCatalog;
   }
 
   public $onInit() {
@@ -112,11 +114,11 @@ export class CatalogSearchController implements angular.IController {
     let results: any = _.take(items, this.maxResultsToShow);
 
     if (totalNumItems === 0) {
-      results.push({id: 'viewNone', text: "No results found for Keyword: " + searchText, name: searchText});
+      results.push({id: 'viewNone', text: this.gettextCatalog.getString("No results found for Keyword: ") + searchText, name: searchText});
     } else if (totalNumItems === 1) {
-      results.push({id: 'viewAll', text: "View the result for Keyword: " + searchText, name: searchText});
+      results.push({id: 'viewAll', text: this.gettextCatalog.getString("View the result for Keyword: ") + searchText, name: searchText});
     } else if (totalNumItems > 1) {
-      results.push({id: 'viewAll', text: "View all " + totalNumItems + " results for Keyword: " + searchText, name: searchText});
+      results.push({id: 'viewAll', text: this.gettextCatalog.getString("View all ") + totalNumItems + this.gettextCatalog.getString(" results for Keyword: ") + searchText, name: searchText});
     }
 
     return results;

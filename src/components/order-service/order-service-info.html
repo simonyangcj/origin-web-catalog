@@ -18,10 +18,10 @@
       </div>
       <ul ng-if="$ctrl.docUrl || $ctrl.supportUrl" class="list-inline order-service-documentation-url">
         <li ng-if="$ctrl.docUrl" >
-          <a ng-href="{{$ctrl.docUrl}}" target="_blank" class="learn-more-link">View Documentation <i class="fa fa-external-link" aria-hidden="true"></i></a>
+          <a ng-href="{{$ctrl.docUrl}}" target="_blank" class="learn-more-link"><translate>View Documentation</translate> <i class="fa fa-external-link" aria-hidden="true"></i></a>
         </li>
         <li ng-if="$ctrl.supportUrl" >
-          <a ng-href="{{$ctrl.supportUrl}}" target="_blank" class="learn-more-link">Get Support <i class="fa fa-external-link" aria-hidden="true"></i></a>
+          <a ng-href="{{$ctrl.supportUrl}}" target="_blank" class="learn-more-link"><translate>Get Support</translate> <i class="fa fa-external-link" aria-hidden="true"></i></a>
         </li>
       </ul>
     </div>
@@ -34,14 +34,14 @@
       </span>
       <span ng-if="$ctrl.selectedPlan.spec.description">{{$ctrl.selectedPlan.spec.description}}</span>
     </p>
-    <p ng-if="!$ctrl.description && !$ctrl.longDescription" class="description">No description provided.</p>
+    <p ng-if="!$ctrl.description && !$ctrl.longDescription" class="description" translate>No description provided.</p>
     <p ng-if="$ctrl.description" ng-bind-html="($ctrl.description | linky : '_blank')" class="description"></p>
     <p ng-if="$ctrl.longDescription" ng-bind-html="$ctrl.longDescription | linky : '_blank'" class="description"></p>
     <div ng-if="$ctrl.imageDependencies.length">
-      <div class="order-service-subheading">Image Dependencies</div>
+      <div class="order-service-subheading" translate>Image Dependencies</div>
       <div ng-repeat="imageName in $ctrl.imageDependencies" class="order-service-dependent-image">
         <span class="pficon pficon-image" aria-hidden="true"></span>
-        <span class="sr-only">Image</span>
+        <span class="sr-only" translate>Image</span>
         {{imageName}}
       </div>
     </div>
