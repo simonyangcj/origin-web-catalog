@@ -18,58 +18,58 @@ msgstr ""
 
 #: src/decorators/bootstrap/array.html:24
 msgid "{{ form.add || 'Add'}}"
-msgstr ""
+msgstr "{{ form.add || ’添加’}}"
 
 #: src/components/projects-summary/projects-summary.html:18
 msgid "A cluster admin can create a project for you by running the command:"
-msgstr ""
+msgstr "集群管理员通过运行命令创建项目："
 
 #: src/components/create-from-builder/create-from-builder-configure.html:112
 msgid "advanced options"
-msgstr ""
+msgstr "高级选项"
 
 #: src/components/create-from-builder/create-from-builder-results.html:51
 msgid "An error occurred creating the application."
-msgstr ""
+msgstr "创建应用发生错误。"
 
 #: src/components/order-service/order-service-results.html:34
 msgid "An error occurred provisioning the service."
-msgstr ""
+msgstr "配置服务发生错误。"
 
 #: src/components/update-service/update-service-results.html:27
 msgid "An error occurred updating the service."
-msgstr ""
+msgstr "更新服务发生错误。"
 
 #: src/components/create-from-builder/create-from-builder-configure.html:27
 msgid "Application Name"
-msgstr ""
+msgstr "应用名词"
 
 #: src/components/create-from-builder/create-from-builder-configure.html:65
 msgid "Application name can't be more than 24 characters."
-msgstr ""
+msgstr "应用名称不能超出24个字符。"
 
 #: src/components/create-from-builder/create-from-builder-configure.html:56
 msgid ""
 "Application name consists of lower-case letters, numbers, and dashes. It "
-"must start with a letter and can't end with a"
-msgstr ""
+"must start with a letter and can't end with a '-' ."
+msgstr "应用名称由小写字母，数组，横线组成。必须以字母开头且不能以-结尾。"
 
 #: src/components/create-from-builder/create-from-builder-configure.html:50
 msgid "Application name is required."
-msgstr ""
+msgstr "应用名称必填。"
 
 #: src/components/create-from-builder/create-from-builder-configure.html:60
 msgid "Application name must be at least 2 characters."
-msgstr ""
+msgstr "应用名至少两个字符。"
 
 #: src/components/services-view/services-view.html:48
 #: src/components/services-view/services-view.html:70
 msgid "Back"
-msgstr ""
+msgstr "返回"
 
 #: dist/origin-web-catalogs.js:1375 dist/origin-web-catalogs.js:1693
 msgid "Binding"
-msgstr ""
+msgstr "绑定"
 
 #: dist/origin-web-catalogs.js:2124
 msgid "Browse Catalog"
@@ -85,65 +85,63 @@ msgstr ""
 
 #: app/components/oauth/oauth.html:14 app/components/oauth/oauth.html:22
 msgid "Cancel"
-msgstr ""
+msgstr "取消"
 
 #: src/components/catalog-search/catalog-search.html:4
 #: src/components/catalog-search/catalog-search.html:8
 msgid "Catalog Search"
-msgstr ""
+msgstr "搜索目录"
 
 #: dist/origin-web-catalogs.js:2131
 msgid "Clear All Filters"
-msgstr ""
+msgstr "清空过滤"
 
 #: src/components/catalog-search/catalog-search.html:35
 msgid "Clear Search Input"
-msgstr ""
+msgstr "清空输入"
 
 #: dist/origin-web-catalogs.js:1327 dist/origin-web-catalogs.js:1611
 #: dist/origin-web-catalogs.js:2249 src/decorators/bootstrap/array.html:15
 msgid "Close"
-msgstr ""
+msgstr "关闭"
 
 #: dist/origin-web-catalogs.js:1318 dist/origin-web-catalogs.js:1366
 #: dist/origin-web-catalogs.js:1503 dist/origin-web-catalogs.js:1592
 #: dist/origin-web-catalogs.js:1624 dist/origin-web-catalogs.js:1684
 #: dist/origin-web-catalogs.js:2305
 msgid "Configuration"
-msgstr ""
+msgstr "配置"
 
 #: app/components/oauth/oauth.html:11
 msgid "Confirm Login"
-msgstr ""
+msgstr "确认登陆"
 
 #: app/components/oauth/oauth.html:18
 msgid "Confirm User Change"
-msgstr ""
+msgstr "确认切换用户"
 
 #: app/components/oauth/oauth.html:13
 msgid "Continue"
-msgstr ""
+msgstr "继续"
 
 #: src/components/create-from-builder/create-from-builder-results.html:35
 #: src/components/order-service/order-service-results.html:18
 #: src/components/order-service/order-service-results.html:57
 #: src/components/order-service/order-service-results.html:60
 msgid "Continue to the project overview"
-msgstr ""
+msgstr "继续前往项目概述"
 
 #: dist/origin-web-catalogs.js:1319 dist/origin-web-catalogs.js:1324
 #: dist/origin-web-catalogs.js:1480 dist/origin-web-catalogs.js:1599
 #: dist/origin-web-catalogs.js:1605 dist/origin-web-catalogs.js:1729
 #: dist/origin-web-catalogs.js:1773
 msgid "Create"
-msgstr ""
+msgstr "创建"
 
 #: dist/origin-web-catalogs.js:2060
 #: src/components/projects-summary/projects-summary.html:7
-#, fuzzy
-#| msgid "Select from Project"
 msgid "Create Project"
-msgstr "从项目中选择"
+msgstr "创建项目"
 
 #: src/components/projects-summary/projects-summary.html:94
 msgid "created"
@@ -151,13 +149,11 @@ msgstr ""
 
 #: src/components/services-view/services-view.html:12
 msgid "Custom Add"
-msgstr ""
+msgstr "自定义添加"
 
 #: src/components/projects-summary/projects-summary.html:75
-#, fuzzy
-#| msgid "Select from Project"
 msgid "Delete Project"
-msgstr "从项目中选择"
+msgstr "删除项目"
 
 #: src/components/services-view/services-view.html:18
 #: src/components/services-view/services-view.html:32
@@ -170,29 +166,29 @@ msgstr ""
 
 #: src/components/projects-summary/projects-summary.html:72
 msgid "Edit Project"
-msgstr ""
+msgstr "编辑项目"
 
 #: app/pages/error/error-page.html:2
 #: src/components/order-service/order-service-results.html:25
 #: src/components/update-service/update-service-results.html:16
 msgid "Error"
-msgstr ""
+msgstr "错误"
 
 #: src/components/create-from-builder/create-from-builder-results.html:43
 msgid "failed to create in"
-msgstr ""
+msgstr "创建失败在"
 
 #: dist/origin-web-catalogs.js:1896 dist/origin-web-catalogs.js:2022
 msgid "Failed to determine create project permission"
-msgstr ""
+msgstr "创建项目授权失败"
 
 #: dist/origin-web-catalogs.js:1342
 msgid "Failed to list instances in namespace"
-msgstr ""
+msgstr "命名空间中列实例名单失败"
 
 #: src/components/order-service/order-service-results.html:28
 msgid "failed to provision in"
-msgstr ""
+msgstr "准备失败在"
 
 #: dist/origin-web-catalogs.js:1083
 msgid "Filter by Keyword"
@@ -200,71 +196,69 @@ msgstr "按关键词过滤"
 
 #: dist/origin-web-catalogs.js:2054
 msgid "Filter projects by name"
-msgstr ""
+msgstr "按项目名过滤"
 
 #: src/components/create-from-builder/create-from-builder-info.html:24
 #: src/components/order-service/order-service-info.html:24
 msgid "Get Support"
-msgstr ""
+msgstr "获取支持"
 
 #: src/components/projects-summary/projects-summary.html:109
 #: src/components/projects-summary/projects-summary.html:12
 msgid "Getting Started"
-msgstr ""
+msgstr "开始"
 
 #: src/components/create-from-builder/create-from-builder-configure.html:74
 msgid "Git Repository"
-msgstr ""
+msgstr "Git仓库"
 
 #: src/components/create-from-builder/create-from-builder-configure.html:91
 msgid "Git repository is required."
-msgstr ""
+msgstr "Git仓库必填。"
 
 #: src/components/projects-summary/projects-summary.html:49
-#, fuzzy
-#| msgid "Select from Project"
 msgid "Go to Project"
-msgstr "从项目中选择"
+msgstr "前往项目"
 
 #: src/components/order-service/order-service-results.html:43
 msgid "has been added to"
-msgstr ""
+msgstr "被添加到"
 
 #: src/components/create-from-builder/create-from-builder-results.html:19
 msgid "has been created in"
-msgstr ""
+msgstr "创建于"
 
 #: src/components/update-service/update-service-results.html:38
 msgid "has been updated successfully in"
-msgstr ""
+msgstr "更新成功在"
 
 #: app/components/navigation/navigation.html:18
 msgid "Help"
-msgstr ""
+msgstr "帮助"
 
 #: app/components/navigation/navigation.html:23
 msgid "Home Page Tour"
-msgstr ""
+msgstr "首页"
 
 #: app/components/oauth/oauth.html:20
 msgid ""
 "If this is unexpected, click Cancel. This could be an attempt to trick you "
 "into acting as another user."
-msgstr ""
+msgstr "如果发生意外，点击取消。"
 
 #: src/components/create-from-builder/create-from-builder-configure.html:111
 msgid ""
 "If you have a private Git repository or need to change application defaults, "
 "view"
-msgstr ""
+msgstr "如果您有私人仓库或者需要切换默认应用，查看"
 
 #: src/components/order-service/order-service-info.html:44
 msgid "Image"
-msgstr ""
+msgstr "镜像"
 
 #: src/components/order-service/order-service-info.html:41
 msgid "Image Dependencies"
-msgstr ""
+msgstr "镜像依赖"
 
 #: src/components/services-view/services-view.html:21
 #: src/components/services-view/services-view.html:35
@@ -274,27 +268,27 @@ msgstr "导入YAML/JSON"
 #: dist/origin-web-catalogs.js:1357 dist/origin-web-catalogs.js:1394
 #: dist/origin-web-catalogs.js:1667 dist/origin-web-catalogs.js:1721
 msgid "Information"
-msgstr ""
+msgstr "信息"
 
 #: src/components/create-from-builder/create-from-builder-results.html:8
 msgid "is being created in"
-msgstr ""
+msgstr "正在被创建在"
 
 #: src/components/order-service/order-service-results.html:9
 msgid "is being provisioned in"
-msgstr ""
+msgstr "正在被分配在"
 
 #: src/components/update-service/update-service-results.html:8
 msgid "is being updated in"
-msgstr ""
+msgstr "正在被更新在"
 
 #: dist/origin-web-catalogs.js:2113
 msgid "Items"
-msgstr ""
+msgstr "项"
 
 #: dist/origin-web-catalogs.js:1082
 msgid "Keyword"
-msgstr ""
+msgstr "关键词"
 
 #: src/components/saas-list/saas-list.html:22
 msgid "Less"
@@ -302,15 +296,15 @@ msgstr ""
 
 #: app/pages/logout/logout-page.html:4
 msgid "Log out"
-msgstr ""
+msgstr "退出"
 
 #: app/components/oauth/oauth.html:6
 msgid "Logging in&hellip;"
-msgstr ""
+msgstr "登陆中&hellip;"
 
 #: app/components/navigation/navigation.html:41
 msgid "Logout"
-msgstr ""
+msgstr "退出"
 
 #: src/components/saas-list/saas-list.html:22
 msgid "More"
@@ -318,7 +312,7 @@ msgstr ""
 
 #: src/components/projects-summary/projects-summary.html:14
 msgid "My Projects"
-msgstr ""
+msgstr "我的项目"
 
 #: dist/origin-web-catalogs.js:1316 dist/origin-web-catalogs.js:1319
 #: dist/origin-web-catalogs.js:1480 dist/origin-web-catalogs.js:1588
@@ -326,89 +320,87 @@ msgstr ""
 #: dist/origin-web-catalogs.js:1729 dist/origin-web-catalogs.js:1773
 #: dist/origin-web-catalogs.js:2236 dist/origin-web-catalogs.js:2349
 msgid "Next >"
-msgstr ""
+msgstr "下一步>"
 
 #: dist/origin-web-catalogs.js:2136
 msgid "No catalog items have been loaded."
-msgstr ""
+msgstr "未加载到目录。"
 
 #: src/components/order-service/order-service-info.html:37
 msgid "No description provided."
-msgstr ""
+msgstr "未提供描述。"
 
 #: dist/origin-web-catalogs.js:2135
 msgid "No items."
-msgstr ""
+msgstr "没有可显示的条目。"
 
 #: src/components/select-plan/selectPlan.html:18
 msgid "No Plans Available"
-msgstr ""
+msgstr "没有可选择的计划"
 
 #: dist/origin-web-catalogs.js:2015
 msgid "No Projects Found"
-msgstr ""
+msgstr "未发现项目"
 
 #: dist/origin-web-catalogs.js:1292
 msgid "No results found for Keyword:"
-msgstr ""
+msgstr "没有匹配到结果根据关键词："
 
 #: dist/origin-web-catalogs.js:2128
 msgid "No results match."
-msgstr ""
+msgstr "没有匹配到结果。"
 
 #: dist/origin-web-catalogs.js:1998
-#, fuzzy
-#| msgid "Select from Project"
 msgid "Other Projects"
-msgstr "从项目中选择"
+msgstr "其他项目"
 
 #: dist/origin-web-catalogs.js:1702
 msgid "Parameters"
-msgstr ""
+msgstr "参数"
 
 #: src/components/create-from-builder/create-from-builder-results.html:5
 #: src/components/order-service/order-service-results.html:6
 msgid "Pending"
-msgstr ""
+msgstr "加载中"
 
 #: dist/origin-web-catalogs.js:1676
 msgid "Plan"
-msgstr ""
+msgstr "计划"
 
 #: app/components/oauth/oauth.html:7
 msgid "Please wait while you are logged in&hellip;"
-msgstr ""
+msgstr "登陆中请等待&hellip;"
 
 #: src/components/projects-summary/projects-summary.html:31
 msgid "Project Name"
-msgstr ""
+msgstr "项目名"
 
 #: dist/origin-web-catalogs.js:1100
 msgid "Publisher"
-msgstr "发布者"
+msgstr ""
 
 #: dist/origin-web-catalogs.js:1998
 #: src/components/projects-summary/projects-summary.html:124
 msgid "Recently Viewed"
-msgstr ""
+msgstr "最近打开"
 
 #: dist/origin-web-catalogs.js:1328 dist/origin-web-catalogs.js:1384
 #: dist/origin-web-catalogs.js:1610 dist/origin-web-catalogs.js:1711
 #: dist/origin-web-catalogs.js:2314
 msgid "Results"
-msgstr ""
+msgstr "结果"
 
 #: dist/origin-web-catalogs.js:1300
 msgid "results for Keyword:"
-msgstr ""
+msgstr "结果根据关键词："
 
 #: app/pages/error/error-page.html:10
 msgid "Return to the"
-msgstr ""
+msgstr "返回到"
 
 #: src/decorators/bootstrap/default.html:58
 msgid "Retype"
-msgstr ""
+msgstr "重新输入"
 
 #: src/components/create-from-builder/create-from-builder-info.html:32
 msgid "Sample Repository:"
@@ -416,18 +408,16 @@ msgstr ""
 
 #: src/components/catalog-search/catalog-search.html:13
 #: src/components/catalog-search/catalog-search.html:21
-#, fuzzy
-#| msgid "Browse Catalog"
 msgid "Search Catalog"
-msgstr "浏览目录"
+msgstr "搜索目录"
 
 #: dist/origin-web-catalogs.js:2138
 msgid "See Loading the Default Image Streams and Templates"
-msgstr ""
+msgstr "查看加载默认的 Image Streams and Templates"
 
 #: src/components/select-plan/selectPlan.html:2
 msgid "Select a Plan"
-msgstr ""
+msgstr "选择plan"
 
 #: src/components/services-view/services-view.html:24
 #: src/components/services-view/services-view.html:38
@@ -435,16 +425,12 @@ msgid "Select from Project"
 msgstr "从项目中选择"
 
 #: dist/origin-web-catalogs.js:2067
-#, fuzzy
-#| msgid "Select from Project"
 msgid "Select or create project"
-msgstr "从项目中选择"
+msgstr "选择或者创建项目"
 
 #: dist/origin-web-catalogs.js:2056
-#, fuzzy
-#| msgid "Select from Project"
 msgid "Select project"
-msgstr "从项目中选择"
+msgstr "选择项目"
 
 #: src/components/order-service/order-service-results.html:73
 msgid "Service Dashboard"
@@ -452,7 +438,7 @@ msgstr ""
 
 #: dist/origin-web-catalogs.js:2016
 msgid "Services cannot be provisioned without a project."
-msgstr ""
+msgstr "没有项目，Services不能分配。"
 
 #: src/components/saas-list/saas-list.html:22
 msgid "Show"
@@ -462,7 +448,7 @@ msgstr ""
 #: src/components/order-service/order-service-results.html:40
 #: src/components/update-service/update-service-results.html:35
 msgid "Success"
-msgstr ""
+msgstr "成功"
 
 #: src/components/create-from-builder/create-from-builder-results.html:19
 #: src/components/order-service/order-service-results.html:43
@@ -475,7 +461,7 @@ msgstr ""
 
 #: app/components/oauth/oauth.html:21
 msgid "Switch Users"
-msgstr ""
+msgstr "切换用户"
 
 #: src/components/projects-summary/projects-summary.html:112
 msgid "Take Home Page Tour"
@@ -483,35 +469,35 @@ msgstr ""
 
 #: dist/origin-web-catalogs.js:2129
 msgid "The active filters are hiding all catalog items."
-msgstr ""
+msgstr "当前过滤条件隐藏了所有目录项。"
 
 #: src/components/order-service/order-service-results.html:12
 msgid "The binding will be created after the service has been provisioned."
-msgstr ""
+msgstr "绑定关系将在分配服务后创建。"
 
 #: src/components/projects-summary/projects-summary.html:26
 msgid ""
 "The complete list of your projects could not be loaded. Type a project name "
 "to go to that project."
-msgstr ""
+msgstr "无法加载完整的项目目录。请输入项目名并前往。"
 
 #: src/components/select-plan/selectPlan.html:21
 msgid "There are no plans currently available for this service."
-msgstr ""
+msgstr "当前没有可供该服务选择的计划。"
 
 #: src/components/order-service/order-service-results.html:13
 msgid "This may take several minutes."
-msgstr ""
+msgstr "将持续几分钟。"
 
 #: src/components/create-from-builder/create-from-builder-configure.html:96
 msgid ""
 "This might not be a valid Git URL. Check that it is the correct URL to a "
 "remote Git repository."
-msgstr ""
+msgstr "Git URL可能不合法.检查Git URL，这是连接远程 Git 仓库的URL。"
 
 #: app/components/oauth/oauth.html:19
 msgid "to"
-msgstr ""
+msgstr "到"
 
 #: src/components/order-service/order-service-results.html:60
 msgid ""
@@ -519,65 +505,67 @@ msgid ""
 "secret containing the information necessary for your application to use the "
 "service."
 msgstr ""
+"绑定该服务到你的应用中。绑定服务创建一个secret，其包含能使用该服务的必要应用"
+"信息。"
 
 #: src/components/create-from-builder/create-from-builder-results.html:35
 msgid "to check the status of your application as it builds and deploys."
-msgstr ""
+msgstr "去检查应用状态 例如构建和部署时。"
 
 #: src/components/order-service/order-service-results.html:18
 msgid "to check the status of your service."
-msgstr ""
+msgstr "去检查服务状态。"
 
 #: app/components/navigation/navigation.html:4
 msgid "Toggle navigation"
-msgstr ""
+msgstr "切换导航"
 
 #: src/components/create-from-builder/create-from-builder-configure.html:87
 msgid "Try Sample Repository"
-msgstr ""
+msgstr "尝试 Sample Repository"
 
 #: dist/origin-web-catalogs.js:2236 dist/origin-web-catalogs.js:2247
 #: dist/origin-web-catalogs.js:2349
 msgid "Update"
-msgstr ""
+msgstr "更新"
 
 #: src/components/update-service/update-service-results.html:5
 msgid "Updating"
-msgstr ""
+msgstr "更新中"
 
 #: src/decorators/bootstrap/default.html:69
 msgid "values don't match."
-msgstr ""
+msgstr "值不匹配。"
 
 #: src/components/create-from-builder/create-from-builder-configure.html:8
 msgid "Version"
-msgstr ""
+msgstr "版本"
 
 #: dist/origin-web-catalogs.js:1300
 msgid "View all"
-msgstr ""
+msgstr "查看所有"
 
 #: src/components/projects-summary/projects-summary.html:62
 msgid "View All"
-msgstr ""
+msgstr "查看所有"
 
 #: src/components/create-from-builder/create-from-builder-info.html:21
 #: src/components/order-service/order-service-info.html:21
 msgid "View Documentation"
-msgstr ""
+msgstr "查看Documentation"
 
 #: src/components/projects-summary/projects-summary.html:71
 msgid "View Membership"
-msgstr ""
+msgstr "查看成员"
 
 #: dist/origin-web-catalogs.js:1296
 msgid "View the result for Keyword:"
-msgstr ""
+msgstr "查看结果按关键词："
 
 #: app/components/oauth/oauth.html:19
 msgid "You are about to change users from"
-msgstr ""
+msgstr "你将切换用户从"
 
 #: app/components/oauth/oauth.html:12
 msgid "You are being logged in as"
-msgstr ""
+msgstr "你正在登陆"

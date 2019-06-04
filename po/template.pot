@@ -41,7 +41,7 @@ msgid "Application name can't be more than 24 characters."
 msgstr ""
 
 #: src/components/create-from-builder/create-from-builder-configure.html:56
-msgid "Application name consists of lower-case letters, numbers, and dashes. It must start with a letter and can't end with a"
+msgid "Application name consists of lower-case letters, numbers, and dashes. It must start with a letter and can't end with a '-' ."
 msgstr ""
 
 #: src/components/create-from-builder/create-from-builder-configure.html:50
@@ -222,11 +222,11 @@ msgid "Go to Project"
 msgstr ""
 
 #: src/components/order-service/order-service-results.html:43
-msgid "has been added to"
+msgid "has been added successfully to"
 msgstr ""
 
 #: src/components/create-from-builder/create-from-builder-results.html:19
-msgid "has been created in"
+msgid "has been created successfully in"
 msgstr ""
 
 #: src/components/update-service/update-service-results.html:38
@@ -454,11 +454,6 @@ msgstr ""
 #: src/components/order-service/order-service-results.html:40
 #: src/components/update-service/update-service-results.html:35
 msgid "Success"
-msgstr ""
-
-#: src/components/create-from-builder/create-from-builder-results.html:19
-#: src/components/order-service/order-service-results.html:43
-msgid "successfully."
 msgstr ""
 
 #: src/components/order-service/order-service-results.html:70
