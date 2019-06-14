@@ -2,7 +2,7 @@ import * as angular from 'angular';
 import * as _ from 'lodash';
 
 export class CatalogService {
-  static $inject = ['$filter', '$q', 'Constants', 'APIService', 'DataService', 'Logger'];
+  static $inject = ['$filter', '$q', 'Constants', 'APIService', 'DataService', 'Logger', 'gettextCatalog'];
 
   public $filter: any;
   private $q: any;
@@ -10,14 +10,16 @@ export class CatalogService {
   private apiService: any;
   private dataService: any;
   private logger: any;
+  private gettextCatalog: any;
 
-  constructor($filter: any, $q: any, constants: any, APIService: any, DataService: any, Logger: any) {
+  constructor($filter: any, $q: any, constants: any, APIService: any, DataService: any, Logger: any, gettextCatalog: any) {
     this.$filter = $filter;
     this.$q = $q;
     this.constants = constants;
     this.apiService = APIService;
     this.dataService = DataService;
     this.logger = Logger;
+    this.gettextCatalog = gettextCatalog;
   }
 
   public getCatalogItems(includeTemplates: boolean) {
@@ -229,6 +231,42 @@ export class CatalogService {
     let filteredSubCats: any;
     let itemCategorized: boolean;
     var categories = angular.copy(this.constants.SERVICE_CATALOG_CATEGORIES);
+
+    const categoryMap = {
+      'Languages': this.gettextCatalog.getString('Languages'),
+      'Java': this.gettextCatalog.getString('Java'),
+      'JavaScript': this.gettextCatalog.getString('JavaScript'),
+      '.NET': this.gettextCatalog.getString('.NET'),
+      'Perl': this.gettextCatalog.getString('Perl'),
+      'Ruby': this.gettextCatalog.getString('Ruby'),
+      'PHP': this.gettextCatalog.getString('PHP'),
+      'Python': this.gettextCatalog.getString('Python'),
+      'Go': this.gettextCatalog.getString('Go'),
+      'Databases': this.gettextCatalog.getString('Databases'),
+      'Mongo': this.gettextCatalog.getString('Mongo'),
+      'MySQL': this.gettextCatalog.getString('MySQL'),
+      'Postgres': this.gettextCatalog.getString('Postgres'),
+      'MariaDB': this.gettextCatalog.getString('MariaDB'),
+      'Middleware': this.gettextCatalog.getString('Middleware'),
+      'Integration': this.gettextCatalog.getString('Integration'),
+      'Process Automation': this.gettextCatalog.getString('Process Automation'),
+      'Analytics & Data': this.gettextCatalog.getString('Analytics & Data'),
+      'Runtimes & Frameworks': this.gettextCatalog.getString('Runtimes & Frameworks'),
+      'CI/CD': this.gettextCatalog.getString('CI/CD'),
+      'Jenkins': this.gettextCatalog.getString('Jenkins'),
+      'Pipelines': this.gettextCatalog.getString('Pipelines'),
+      'Virtualization': this.gettextCatalog.getString('Virtualization'),
+      'Virtual Machines': this.gettextCatalog.getString('Virtual Machines')
+    };
+    _.each(categories, (category: any) => {
+      category.label = categoryMap[category.label];
+      if (category.subCategories) {
+        _.each(category.subCategories, (subCategorie: any) => {
+          subCategorie.label = categoryMap[subCategorie.label];
+        });
+      }
+    });
+
     this.createAllAndOtherMainCategories(categories);
 
     let allMainCategory: any = _.head(categories);
@@ -294,12 +332,12 @@ export class CatalogService {
 
   private createAllAndOtherMainCategories(categories: any) {
     categories.unshift({
-      id: 'all', label: 'All', subCategories: [
-        {id: 'all', label: 'All'}
+      id: 'all', label: this.gettextCatalog.getString('All'), subCategories: [
+        {id: 'all', label: this.gettextCatalog.getString('All')}
       ]
     });
     categories.push({
-      id: 'other', label: 'Other', subCategories: [
+      id: 'other', label: this.gettextCatalog.getString('Other'), subCategories: [
         {id: 'all', label: 'all'}
       ]
     });
@@ -311,10 +349,10 @@ export class CatalogService {
 
     if (!subCatObj) {
       if (subCategory === 'other') {
-        subCatObj = {id: 'other', label: 'Other'};
+        subCatObj = {id: 'other', label: this.gettextCatalog.getString('Other')};
         category.subCategories.push(subCatObj);
       } else {
-        subCatObj = {id: 'all', label: 'All'};
+        subCatObj = {id: 'all', label: this.gettextCatalog.getString('All')};
         category.subCategories.unshift(subCatObj);
       }
     }
@@ -342,7 +380,7 @@ export class CatalogService {
       return;
     }
 
-    errorMsg = _.size(errorMsg) ? 'Unable to load all content for the catalog. Error loading ' + this.formatArray(errorMsg) : null;
+    errorMsg = _.size(errorMsg) ? this.gettextCatalog.getString('Unable to load all content for the catalog. Error loading ') + this.formatArray(errorMsg) : null;
 
     let results: any = this.convertToServiceItems(catalogItems.serviceClasses,
                                                   catalogItems.imageStreams,

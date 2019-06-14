@@ -8,6 +8,10 @@ msgstr ""
 msgid "- or -"
 msgstr ""
 
+#: dist/origin-web-catalogs.js:839
+msgid ".NET"
+msgstr ""
+
 #: src/decorators/bootstrap/array.html:24
 msgid "{{ form.add || 'Add'}}"
 msgstr ""
@@ -33,6 +37,12 @@ msgstr ""
 msgid "advanced options"
 msgstr ""
 
+#: dist/origin-web-catalogs.js:889
+#: dist/origin-web-catalogs.js:892
+#: dist/origin-web-catalogs.js:911
+msgid "All"
+msgstr ""
+
 #: src/components/create-from-builder/create-from-builder-results.html:51
 msgid "An error occurred creating the application."
 msgstr ""
@@ -43,6 +53,10 @@ msgstr ""
 
 #: src/components/update-service/update-service-results.html:27
 msgid "An error occurred updating the service."
+msgstr ""
+
+#: dist/origin-web-catalogs.js:853
+msgid "Analytics & Data"
 msgstr ""
 
 #: src/components/create-from-builder/create-from-builder-configure.html:27
@@ -70,12 +84,12 @@ msgstr ""
 msgid "Back"
 msgstr ""
 
-#: dist/origin-web-catalogs.js:1375
-#: dist/origin-web-catalogs.js:1693
+#: dist/origin-web-catalogs.js:1404
+#: dist/origin-web-catalogs.js:1722
 msgid "Binding"
 msgstr ""
 
-#: dist/origin-web-catalogs.js:2124
+#: dist/origin-web-catalogs.js:2153
 msgid "Browse Catalog"
 msgstr ""
 
@@ -97,7 +111,11 @@ msgstr ""
 msgid "Catalog Search"
 msgstr ""
 
-#: dist/origin-web-catalogs.js:2131
+#: dist/origin-web-catalogs.js:855
+msgid "CI/CD"
+msgstr ""
+
+#: dist/origin-web-catalogs.js:2160
 msgid "Clear All Filters"
 msgstr ""
 
@@ -105,20 +123,20 @@ msgstr ""
 msgid "Clear Search Input"
 msgstr ""
 
-#: dist/origin-web-catalogs.js:1327
-#: dist/origin-web-catalogs.js:1611
-#: dist/origin-web-catalogs.js:2249
+#: dist/origin-web-catalogs.js:1356
+#: dist/origin-web-catalogs.js:1640
+#: dist/origin-web-catalogs.js:2278
 #: src/decorators/bootstrap/array.html:15
 msgid "Close"
 msgstr ""
 
-#: dist/origin-web-catalogs.js:1318
-#: dist/origin-web-catalogs.js:1366
-#: dist/origin-web-catalogs.js:1503
-#: dist/origin-web-catalogs.js:1592
-#: dist/origin-web-catalogs.js:1624
-#: dist/origin-web-catalogs.js:1684
-#: dist/origin-web-catalogs.js:2305
+#: dist/origin-web-catalogs.js:1347
+#: dist/origin-web-catalogs.js:1395
+#: dist/origin-web-catalogs.js:1532
+#: dist/origin-web-catalogs.js:1621
+#: dist/origin-web-catalogs.js:1653
+#: dist/origin-web-catalogs.js:1713
+#: dist/origin-web-catalogs.js:2334
 msgid "Configuration"
 msgstr ""
 
@@ -141,18 +159,19 @@ msgstr ""
 msgid "Continue to the project overview"
 msgstr ""
 
-#: dist/origin-web-catalogs.js:1319
-#: dist/origin-web-catalogs.js:1324
-#: dist/origin-web-catalogs.js:1480
-#: dist/origin-web-catalogs.js:1599
-#: dist/origin-web-catalogs.js:1605
-#: dist/origin-web-catalogs.js:1729
-#: dist/origin-web-catalogs.js:1773
+#: dist/origin-web-catalogs.js:1348
+#: dist/origin-web-catalogs.js:1353
+#: dist/origin-web-catalogs.js:1509
+#: dist/origin-web-catalogs.js:1628
+#: dist/origin-web-catalogs.js:1634
+#: dist/origin-web-catalogs.js:1758
+#: dist/origin-web-catalogs.js:1802
 msgid "Create"
 msgstr ""
 
-#: dist/origin-web-catalogs.js:2060
+#: dist/origin-web-catalogs.js:2089
 #: src/components/projects-summary/projects-summary.html:7
+#: src/components/projects-summary/projects-summary.html:9
 #: src/components/select-project/selectProject.html:17
 msgid "Create Project"
 msgstr ""
@@ -163,6 +182,10 @@ msgstr ""
 
 #: src/components/services-view/services-view.html:12
 msgid "Custom Add"
+msgstr ""
+
+#: dist/origin-web-catalogs.js:845
+msgid "Databases"
 msgstr ""
 
 #: src/components/projects-summary/projects-summary.html:75
@@ -178,6 +201,7 @@ msgstr ""
 msgid "Documentation"
 msgstr ""
 
+#: src/components/projects-summary/projects-summary.html:101
 #: src/components/projects-summary/projects-summary.html:72
 msgid "Edit Project"
 msgstr ""
@@ -192,12 +216,12 @@ msgstr ""
 msgid "failed to create in"
 msgstr ""
 
-#: dist/origin-web-catalogs.js:1896
-#: dist/origin-web-catalogs.js:2022
+#: dist/origin-web-catalogs.js:1925
+#: dist/origin-web-catalogs.js:2051
 msgid "Failed to determine create project permission"
 msgstr ""
 
-#: dist/origin-web-catalogs.js:1342
+#: dist/origin-web-catalogs.js:1371
 msgid "Failed to list instances in namespace"
 msgstr ""
 
@@ -205,11 +229,11 @@ msgstr ""
 msgid "failed to provision in"
 msgstr ""
 
-#: dist/origin-web-catalogs.js:1083
+#: dist/origin-web-catalogs.js:1112
 msgid "Filter by Keyword"
 msgstr ""
 
-#: dist/origin-web-catalogs.js:2054
+#: dist/origin-web-catalogs.js:2083
 msgid "Filter projects by name"
 msgstr ""
 
@@ -229,6 +253,10 @@ msgstr ""
 
 #: src/components/create-from-builder/create-from-builder-configure.html:91
 msgid "Git repository is required."
+msgstr ""
+
+#: dist/origin-web-catalogs.js:844
+msgid "Go"
 msgstr ""
 
 #: src/components/projects-summary/projects-summary.html:49
@@ -276,11 +304,15 @@ msgstr ""
 msgid "Import YAML / JSON"
 msgstr ""
 
-#: dist/origin-web-catalogs.js:1357
-#: dist/origin-web-catalogs.js:1394
-#: dist/origin-web-catalogs.js:1667
-#: dist/origin-web-catalogs.js:1721
+#: dist/origin-web-catalogs.js:1386
+#: dist/origin-web-catalogs.js:1423
+#: dist/origin-web-catalogs.js:1696
+#: dist/origin-web-catalogs.js:1750
 msgid "Information"
+msgstr ""
+
+#: dist/origin-web-catalogs.js:851
+msgid "Integration"
 msgstr ""
 
 #: src/components/create-from-builder/create-from-builder-results.html:8
@@ -295,12 +327,28 @@ msgstr ""
 msgid "is being updated in"
 msgstr ""
 
-#: dist/origin-web-catalogs.js:2113
+#: dist/origin-web-catalogs.js:2142
 msgid "Items"
 msgstr ""
 
-#: dist/origin-web-catalogs.js:1082
+#: dist/origin-web-catalogs.js:837
+msgid "Java"
+msgstr ""
+
+#: dist/origin-web-catalogs.js:838
+msgid "JavaScript"
+msgstr ""
+
+#: dist/origin-web-catalogs.js:856
+msgid "Jenkins"
+msgstr ""
+
+#: dist/origin-web-catalogs.js:1111
 msgid "Keyword"
+msgstr ""
+
+#: dist/origin-web-catalogs.js:836
+msgid "Languages"
 msgstr ""
 
 #: src/components/saas-list/saas-list.html:22
@@ -319,6 +367,18 @@ msgstr ""
 msgid "Logout"
 msgstr ""
 
+#: dist/origin-web-catalogs.js:849
+msgid "MariaDB"
+msgstr ""
+
+#: dist/origin-web-catalogs.js:850
+msgid "Middleware"
+msgstr ""
+
+#: dist/origin-web-catalogs.js:846
+msgid "Mongo"
+msgstr ""
+
 #: src/components/saas-list/saas-list.html:22
 msgid "More"
 msgstr ""
@@ -327,24 +387,28 @@ msgstr ""
 msgid "My Projects"
 msgstr ""
 
+#: dist/origin-web-catalogs.js:847
+msgid "MySQL"
+msgstr ""
+
 #: src/components/select-project/selectProject.html:85
 msgid "Name must have at least two characters."
 msgstr ""
 
-#: dist/origin-web-catalogs.js:1316
-#: dist/origin-web-catalogs.js:1319
-#: dist/origin-web-catalogs.js:1480
-#: dist/origin-web-catalogs.js:1588
-#: dist/origin-web-catalogs.js:1590
-#: dist/origin-web-catalogs.js:1599
-#: dist/origin-web-catalogs.js:1729
-#: dist/origin-web-catalogs.js:1773
-#: dist/origin-web-catalogs.js:2236
-#: dist/origin-web-catalogs.js:2349
+#: dist/origin-web-catalogs.js:1345
+#: dist/origin-web-catalogs.js:1348
+#: dist/origin-web-catalogs.js:1509
+#: dist/origin-web-catalogs.js:1617
+#: dist/origin-web-catalogs.js:1619
+#: dist/origin-web-catalogs.js:1628
+#: dist/origin-web-catalogs.js:1758
+#: dist/origin-web-catalogs.js:1802
+#: dist/origin-web-catalogs.js:2265
+#: dist/origin-web-catalogs.js:2378
 msgid "Next >"
 msgstr ""
 
-#: dist/origin-web-catalogs.js:2136
+#: dist/origin-web-catalogs.js:2165
 msgid "No catalog items have been loaded."
 msgstr ""
 
@@ -352,7 +416,7 @@ msgstr ""
 msgid "No description provided."
 msgstr ""
 
-#: dist/origin-web-catalogs.js:2135
+#: dist/origin-web-catalogs.js:2164
 msgid "No items."
 msgstr ""
 
@@ -360,15 +424,15 @@ msgstr ""
 msgid "No Plans Available"
 msgstr ""
 
-#: dist/origin-web-catalogs.js:2015
+#: dist/origin-web-catalogs.js:2044
 msgid "No Projects Found"
 msgstr ""
 
-#: dist/origin-web-catalogs.js:1292
+#: dist/origin-web-catalogs.js:1321
 msgid "No results found for Keyword:"
 msgstr ""
 
-#: dist/origin-web-catalogs.js:2128
+#: dist/origin-web-catalogs.js:2157
 msgid "No results match."
 msgstr ""
 
@@ -376,11 +440,16 @@ msgstr ""
 msgid "or create"
 msgstr ""
 
-#: dist/origin-web-catalogs.js:1998
+#: dist/origin-web-catalogs.js:896
+#: dist/origin-web-catalogs.js:908
+msgid "Other"
+msgstr ""
+
+#: dist/origin-web-catalogs.js:2027
 msgid "Other Projects"
 msgstr ""
 
-#: dist/origin-web-catalogs.js:1702
+#: dist/origin-web-catalogs.js:1731
 msgid "Parameters"
 msgstr ""
 
@@ -389,7 +458,19 @@ msgstr ""
 msgid "Pending"
 msgstr ""
 
-#: dist/origin-web-catalogs.js:1676
+#: dist/origin-web-catalogs.js:840
+msgid "Perl"
+msgstr ""
+
+#: dist/origin-web-catalogs.js:842
+msgid "PHP"
+msgstr ""
+
+#: dist/origin-web-catalogs.js:857
+msgid "Pipelines"
+msgstr ""
+
+#: dist/origin-web-catalogs.js:1705
 msgid "Plan"
 msgstr ""
 
@@ -399,6 +480,14 @@ msgstr ""
 
 #: app/components/oauth/oauth.html:7
 msgid "Please wait while you are logged in&hellip;"
+msgstr ""
+
+#: dist/origin-web-catalogs.js:848
+msgid "Postgres"
+msgstr ""
+
+#: dist/origin-web-catalogs.js:852
+msgid "Process Automation"
 msgstr ""
 
 #: src/components/select-project/selectProject.html:113
@@ -420,24 +509,28 @@ msgid ""
 "        They may not start or end with a dash."
 msgstr ""
 
-#: dist/origin-web-catalogs.js:1100
+#: dist/origin-web-catalogs.js:1129
 msgid "Publisher"
 msgstr ""
 
-#: dist/origin-web-catalogs.js:1998
+#: dist/origin-web-catalogs.js:843
+msgid "Python"
+msgstr ""
+
+#: dist/origin-web-catalogs.js:2027
 #: src/components/projects-summary/projects-summary.html:124
 msgid "Recently Viewed"
 msgstr ""
 
-#: dist/origin-web-catalogs.js:1328
-#: dist/origin-web-catalogs.js:1384
-#: dist/origin-web-catalogs.js:1610
-#: dist/origin-web-catalogs.js:1711
-#: dist/origin-web-catalogs.js:2314
+#: dist/origin-web-catalogs.js:1357
+#: dist/origin-web-catalogs.js:1413
+#: dist/origin-web-catalogs.js:1639
+#: dist/origin-web-catalogs.js:1740
+#: dist/origin-web-catalogs.js:2343
 msgid "Results"
 msgstr ""
 
-#: dist/origin-web-catalogs.js:1300
+#: dist/origin-web-catalogs.js:1329
 msgid "results for Keyword:"
 msgstr ""
 
@@ -449,6 +542,14 @@ msgstr ""
 msgid "Retype"
 msgstr ""
 
+#: dist/origin-web-catalogs.js:841
+msgid "Ruby"
+msgstr ""
+
+#: dist/origin-web-catalogs.js:854
+msgid "Runtimes & Frameworks"
+msgstr ""
+
 #: src/components/create-from-builder/create-from-builder-info.html:32
 msgid "Sample Repository:"
 msgstr ""
@@ -458,7 +559,7 @@ msgstr ""
 msgid "Search Catalog"
 msgstr ""
 
-#: dist/origin-web-catalogs.js:2138
+#: dist/origin-web-catalogs.js:2167
 msgid "See Loading the Default Image Streams and Templates"
 msgstr ""
 
@@ -471,11 +572,11 @@ msgstr ""
 msgid "Select from Project"
 msgstr ""
 
-#: dist/origin-web-catalogs.js:2067
+#: dist/origin-web-catalogs.js:2096
 msgid "Select or create project"
 msgstr ""
 
-#: dist/origin-web-catalogs.js:2056
+#: dist/origin-web-catalogs.js:2085
 msgid "Select project"
 msgstr ""
 
@@ -483,7 +584,7 @@ msgstr ""
 msgid "Service Dashboard"
 msgstr ""
 
-#: dist/origin-web-catalogs.js:2016
+#: dist/origin-web-catalogs.js:2045
 msgid "Services cannot be provisioned without a project."
 msgstr ""
 
@@ -509,7 +610,7 @@ msgstr ""
 msgid "Take Home Page Tour"
 msgstr ""
 
-#: dist/origin-web-catalogs.js:2129
+#: dist/origin-web-catalogs.js:2158
 msgid "The active filters are hiding all catalog items."
 msgstr ""
 
@@ -561,9 +662,13 @@ msgstr ""
 msgid "Try Sample Repository"
 msgstr ""
 
-#: dist/origin-web-catalogs.js:2236
-#: dist/origin-web-catalogs.js:2247
-#: dist/origin-web-catalogs.js:2349
+#: dist/origin-web-catalogs.js:927
+msgid "Unable to load all content for the catalog. Error loading"
+msgstr ""
+
+#: dist/origin-web-catalogs.js:2265
+#: dist/origin-web-catalogs.js:2276
+#: dist/origin-web-catalogs.js:2378
 msgid "Update"
 msgstr ""
 
@@ -579,7 +684,7 @@ msgstr ""
 msgid "Version"
 msgstr ""
 
-#: dist/origin-web-catalogs.js:1300
+#: dist/origin-web-catalogs.js:1329
 msgid "View all"
 msgstr ""
 
@@ -596,8 +701,16 @@ msgstr ""
 msgid "View Membership"
 msgstr ""
 
-#: dist/origin-web-catalogs.js:1296
+#: dist/origin-web-catalogs.js:1325
 msgid "View the result for Keyword:"
+msgstr ""
+
+#: dist/origin-web-catalogs.js:859
+msgid "Virtual Machines"
+msgstr ""
+
+#: dist/origin-web-catalogs.js:858
+msgid "Virtualization"
 msgstr ""
 
 #: app/components/oauth/oauth.html:19

@@ -60,7 +60,7 @@ export class ServicesViewController implements angular.IController {
     $(window).on('resize.services', this.debounceResize);
 
     this.ctrl.currentFilter = this.ctrl.currentSubFilter = 'all';
-    this.ctrl.sectionTitle = this.ctrl.sectionTitle ||this.gettextCatalog.getString('Browse Catalog');
+    this.ctrl.sectionTitle = this.ctrl.sectionTitle || this.gettextCatalog.getString('Browse Catalog');
 
     this.removeFilterListener = this.$rootScope.$on('filter-catalog-items', (event: any, searchCriteria: any) => {
       this.setKeywordFilter(searchCriteria.searchText);

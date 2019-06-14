@@ -16,9 +16,13 @@ msgstr ""
 msgid "- or -"
 msgstr ""
 
+#: dist/origin-web-catalogs.js:841
+msgid ".NET"
+msgstr ""
+
 #: src/decorators/bootstrap/array.html:24
 msgid "{{ form.add || 'Add'}}"
-msgstr "{{ form.add || ’添加’}}"
+msgstr ""
 
 #: src/components/projects-summary/projects-summary.html:18
 #: src/components/select-project/selectProject.html:4
@@ -41,6 +45,11 @@ msgstr "添加到项目"
 msgid "advanced options"
 msgstr "高级选项"
 
+#: dist/origin-web-catalogs.js:891 dist/origin-web-catalogs.js:894
+#: dist/origin-web-catalogs.js:913
+msgid "All"
+msgstr "全部"
+
 #: src/components/create-from-builder/create-from-builder-results.html:51
 msgid "An error occurred creating the application."
 msgstr "创建应用发生错误。"
@@ -52,6 +61,10 @@ msgstr "配置服务发生错误。"
 #: src/components/update-service/update-service-results.html:27
 msgid "An error occurred updating the service."
 msgstr "更新服务发生错误。"
+
+#: dist/origin-web-catalogs.js:855
+msgid "Analytics & Data"
+msgstr ""
 
 #: src/components/create-from-builder/create-from-builder-configure.html:27
 msgid "Application Name"
@@ -80,11 +93,11 @@ msgstr "应用名至少两个字符。"
 msgid "Back"
 msgstr "返回"
 
-#: dist/origin-web-catalogs.js:1375 dist/origin-web-catalogs.js:1693
+#: dist/origin-web-catalogs.js:1406 dist/origin-web-catalogs.js:1724
 msgid "Binding"
 msgstr "绑定"
 
-#: dist/origin-web-catalogs.js:2124
+#: dist/origin-web-catalogs.js:2155
 msgid "Browse Catalog"
 msgstr "浏览目录"
 
@@ -105,23 +118,27 @@ msgstr "取消"
 msgid "Catalog Search"
 msgstr "搜索目录"
 
-#: dist/origin-web-catalogs.js:2131
+#: dist/origin-web-catalogs.js:857
+msgid "CI/CD"
+msgstr ""
+
+#: dist/origin-web-catalogs.js:2162
 msgid "Clear All Filters"
-msgstr "清空过滤"
+msgstr "清空筛选"
 
 #: src/components/catalog-search/catalog-search.html:35
 msgid "Clear Search Input"
 msgstr "清空输入"
 
-#: dist/origin-web-catalogs.js:1327 dist/origin-web-catalogs.js:1611
-#: dist/origin-web-catalogs.js:2249 src/decorators/bootstrap/array.html:15
+#: dist/origin-web-catalogs.js:1358 dist/origin-web-catalogs.js:1642
+#: dist/origin-web-catalogs.js:2280 src/decorators/bootstrap/array.html:15
 msgid "Close"
 msgstr "关闭"
 
-#: dist/origin-web-catalogs.js:1318 dist/origin-web-catalogs.js:1366
-#: dist/origin-web-catalogs.js:1503 dist/origin-web-catalogs.js:1592
-#: dist/origin-web-catalogs.js:1624 dist/origin-web-catalogs.js:1684
-#: dist/origin-web-catalogs.js:2305
+#: dist/origin-web-catalogs.js:1349 dist/origin-web-catalogs.js:1397
+#: dist/origin-web-catalogs.js:1534 dist/origin-web-catalogs.js:1623
+#: dist/origin-web-catalogs.js:1655 dist/origin-web-catalogs.js:1715
+#: dist/origin-web-catalogs.js:2336
 msgid "Configuration"
 msgstr "配置"
 
@@ -144,14 +161,14 @@ msgstr "继续"
 msgid "Continue to the project overview"
 msgstr "继续前往项目概述"
 
-#: dist/origin-web-catalogs.js:1319 dist/origin-web-catalogs.js:1324
-#: dist/origin-web-catalogs.js:1480 dist/origin-web-catalogs.js:1599
-#: dist/origin-web-catalogs.js:1605 dist/origin-web-catalogs.js:1729
-#: dist/origin-web-catalogs.js:1773
+#: dist/origin-web-catalogs.js:1350 dist/origin-web-catalogs.js:1355
+#: dist/origin-web-catalogs.js:1511 dist/origin-web-catalogs.js:1630
+#: dist/origin-web-catalogs.js:1636 dist/origin-web-catalogs.js:1760
+#: dist/origin-web-catalogs.js:1804
 msgid "Create"
 msgstr "创建"
 
-#: dist/origin-web-catalogs.js:2060
+#: dist/origin-web-catalogs.js:2091
 #: src/components/projects-summary/projects-summary.html:7
 #: src/components/select-project/selectProject.html:17
 msgid "Create Project"
@@ -164,6 +181,10 @@ msgstr ""
 #: src/components/services-view/services-view.html:12
 msgid "Custom Add"
 msgstr "自定义添加"
+
+#: dist/origin-web-catalogs.js:847
+msgid "Databases"
+msgstr "数据库"
 
 #: src/components/projects-summary/projects-summary.html:75
 msgid "Delete Project"
@@ -192,11 +213,11 @@ msgstr "错误"
 msgid "failed to create in"
 msgstr "创建失败在"
 
-#: dist/origin-web-catalogs.js:1896 dist/origin-web-catalogs.js:2022
+#: dist/origin-web-catalogs.js:1927 dist/origin-web-catalogs.js:2053
 msgid "Failed to determine create project permission"
 msgstr "创建项目授权失败"
 
-#: dist/origin-web-catalogs.js:1342
+#: dist/origin-web-catalogs.js:1373
 msgid "Failed to list instances in namespace"
 msgstr "命名空间中列实例名单失败"
 
@@ -204,13 +225,13 @@ msgstr "命名空间中列实例名单失败"
 msgid "failed to provision in"
 msgstr "准备失败在"
 
-#: dist/origin-web-catalogs.js:1083
+#: dist/origin-web-catalogs.js:1114
 msgid "Filter by Keyword"
-msgstr "按关键词过滤"
+msgstr "按关键词筛选"
 
-#: dist/origin-web-catalogs.js:2054
+#: dist/origin-web-catalogs.js:2085
 msgid "Filter projects by name"
-msgstr "按项目名过滤"
+msgstr "按项目名筛选"
 
 #: src/components/create-from-builder/create-from-builder-info.html:24
 #: src/components/order-service/order-service-info.html:24
@@ -229,6 +250,10 @@ msgstr "Git仓库"
 #: src/components/create-from-builder/create-from-builder-configure.html:91
 msgid "Git repository is required."
 msgstr "Git仓库必填。"
+
+#: dist/origin-web-catalogs.js:846
+msgid "Go"
+msgstr ""
 
 #: src/components/projects-summary/projects-summary.html:49
 msgid "Go to Project"
@@ -279,10 +304,14 @@ msgstr "镜像依赖"
 msgid "Import YAML / JSON"
 msgstr "导入YAML/JSON"
 
-#: dist/origin-web-catalogs.js:1357 dist/origin-web-catalogs.js:1394
-#: dist/origin-web-catalogs.js:1667 dist/origin-web-catalogs.js:1721
+#: dist/origin-web-catalogs.js:1388 dist/origin-web-catalogs.js:1425
+#: dist/origin-web-catalogs.js:1698 dist/origin-web-catalogs.js:1752
 msgid "Information"
 msgstr "信息"
+
+#: dist/origin-web-catalogs.js:853
+msgid "Integration"
+msgstr ""
 
 #: src/components/create-from-builder/create-from-builder-results.html:8
 msgid "is being created in"
@@ -296,13 +325,29 @@ msgstr "正在被分配在"
 msgid "is being updated in"
 msgstr "正在被更新在"
 
-#: dist/origin-web-catalogs.js:2113
+#: dist/origin-web-catalogs.js:2144
 msgid "Items"
 msgstr "项"
 
-#: dist/origin-web-catalogs.js:1082
+#: dist/origin-web-catalogs.js:839
+msgid "Java"
+msgstr ""
+
+#: dist/origin-web-catalogs.js:840
+msgid "JavaScript"
+msgstr ""
+
+#: dist/origin-web-catalogs.js:858
+msgid "Jenkins"
+msgstr ""
+
+#: dist/origin-web-catalogs.js:1113
 msgid "Keyword"
 msgstr "关键词"
+
+#: dist/origin-web-catalogs.js:838
+msgid "Languages"
+msgstr "语言"
 
 #: src/components/saas-list/saas-list.html:22
 msgid "Less"
@@ -320,27 +365,43 @@ msgstr "登陆中&hellip;"
 msgid "Logout"
 msgstr "退出"
 
+#: dist/origin-web-catalogs.js:851
+msgid "MariaDB"
+msgstr ""
+
+#: dist/origin-web-catalogs.js:852
+msgid "Middleware"
+msgstr "中间件"
+
+#: dist/origin-web-catalogs.js:848
+msgid "Mongo"
+msgstr ""
+
 #: src/components/saas-list/saas-list.html:22
 msgid "More"
-msgstr ""
+msgstr "更多"
 
 #: src/components/projects-summary/projects-summary.html:14
 msgid "My Projects"
 msgstr "我的项目"
 
+#: dist/origin-web-catalogs.js:849
+msgid "MySQL"
+msgstr ""
+
 #: src/components/select-project/selectProject.html:85
 msgid "Name must have at least two characters."
 msgstr "名称至少两个字符。"
 
-#: dist/origin-web-catalogs.js:1316 dist/origin-web-catalogs.js:1319
-#: dist/origin-web-catalogs.js:1480 dist/origin-web-catalogs.js:1588
-#: dist/origin-web-catalogs.js:1590 dist/origin-web-catalogs.js:1599
-#: dist/origin-web-catalogs.js:1729 dist/origin-web-catalogs.js:1773
-#: dist/origin-web-catalogs.js:2236 dist/origin-web-catalogs.js:2349
+#: dist/origin-web-catalogs.js:1347 dist/origin-web-catalogs.js:1350
+#: dist/origin-web-catalogs.js:1511 dist/origin-web-catalogs.js:1619
+#: dist/origin-web-catalogs.js:1621 dist/origin-web-catalogs.js:1630
+#: dist/origin-web-catalogs.js:1760 dist/origin-web-catalogs.js:1804
+#: dist/origin-web-catalogs.js:2267 dist/origin-web-catalogs.js:2380
 msgid "Next >"
 msgstr "下一步>"
 
-#: dist/origin-web-catalogs.js:2136
+#: dist/origin-web-catalogs.js:2167
 msgid "No catalog items have been loaded."
 msgstr "未加载到目录。"
 
@@ -348,7 +409,7 @@ msgstr "未加载到目录。"
 msgid "No description provided."
 msgstr "未提供描述。"
 
-#: dist/origin-web-catalogs.js:2135
+#: dist/origin-web-catalogs.js:2166
 msgid "No items."
 msgstr "没有可显示的条目。"
 
@@ -356,15 +417,15 @@ msgstr "没有可显示的条目。"
 msgid "No Plans Available"
 msgstr "没有可选择的计划"
 
-#: dist/origin-web-catalogs.js:2015
+#: dist/origin-web-catalogs.js:2046
 msgid "No Projects Found"
 msgstr "未发现项目"
 
-#: dist/origin-web-catalogs.js:1292
+#: dist/origin-web-catalogs.js:1323
 msgid "No results found for Keyword:"
 msgstr "没有匹配到结果根据关键词："
 
-#: dist/origin-web-catalogs.js:2128
+#: dist/origin-web-catalogs.js:2159
 msgid "No results match."
 msgstr "没有匹配到结果。"
 
@@ -372,11 +433,15 @@ msgstr "没有匹配到结果。"
 msgid "or create"
 msgstr "或创建"
 
-#: dist/origin-web-catalogs.js:1998
+#: dist/origin-web-catalogs.js:898 dist/origin-web-catalogs.js:910
+msgid "Other"
+msgstr "其他"
+
+#: dist/origin-web-catalogs.js:2029
 msgid "Other Projects"
 msgstr "其他项目"
 
-#: dist/origin-web-catalogs.js:1702
+#: dist/origin-web-catalogs.js:1733
 msgid "Parameters"
 msgstr "参数"
 
@@ -385,7 +450,19 @@ msgstr "参数"
 msgid "Pending"
 msgstr "加载中"
 
-#: dist/origin-web-catalogs.js:1676
+#: dist/origin-web-catalogs.js:842
+msgid "Perl"
+msgstr ""
+
+#: dist/origin-web-catalogs.js:844
+msgid "PHP"
+msgstr ""
+
+#: dist/origin-web-catalogs.js:859
+msgid "Pipelines"
+msgstr ""
+
+#: dist/origin-web-catalogs.js:1707
 msgid "Plan"
 msgstr "计划"
 
@@ -396,6 +473,14 @@ msgstr "请选择"
 #: app/components/oauth/oauth.html:7
 msgid "Please wait while you are logged in&hellip;"
 msgstr "登陆中请等待&hellip;"
+
+#: dist/origin-web-catalogs.js:850
+msgid "Postgres"
+msgstr ""
+
+#: dist/origin-web-catalogs.js:854
+msgid "Process Automation"
+msgstr ""
 
 #: src/components/select-project/selectProject.html:113
 msgid "Project Description"
@@ -416,22 +501,26 @@ msgid ""
 "        They may not start or end with a dash."
 msgstr "项目名称由小写字母，数组，横线组成。必须以字母开头且不能以-结尾。"
 
-#: dist/origin-web-catalogs.js:1100
+#: dist/origin-web-catalogs.js:1131
 msgid "Publisher"
 msgstr ""
 
-#: dist/origin-web-catalogs.js:1998
+#: dist/origin-web-catalogs.js:845
+msgid "Python"
+msgstr ""
+
+#: dist/origin-web-catalogs.js:2029
 #: src/components/projects-summary/projects-summary.html:124
 msgid "Recently Viewed"
 msgstr "最近打开"
 
-#: dist/origin-web-catalogs.js:1328 dist/origin-web-catalogs.js:1384
-#: dist/origin-web-catalogs.js:1610 dist/origin-web-catalogs.js:1711
-#: dist/origin-web-catalogs.js:2314
+#: dist/origin-web-catalogs.js:1359 dist/origin-web-catalogs.js:1415
+#: dist/origin-web-catalogs.js:1641 dist/origin-web-catalogs.js:1742
+#: dist/origin-web-catalogs.js:2345
 msgid "Results"
 msgstr "结果"
 
-#: dist/origin-web-catalogs.js:1300
+#: dist/origin-web-catalogs.js:1331
 msgid "results for Keyword:"
 msgstr "结果根据关键词："
 
@@ -443,6 +532,14 @@ msgstr "返回到"
 msgid "Retype"
 msgstr "重新输入"
 
+#: dist/origin-web-catalogs.js:843
+msgid "Ruby"
+msgstr ""
+
+#: dist/origin-web-catalogs.js:856
+msgid "Runtimes & Frameworks"
+msgstr ""
+
 #: src/components/create-from-builder/create-from-builder-info.html:32
 msgid "Sample Repository:"
 msgstr ""
@@ -452,7 +549,7 @@ msgstr ""
 msgid "Search Catalog"
 msgstr "搜索目录"
 
-#: dist/origin-web-catalogs.js:2138
+#: dist/origin-web-catalogs.js:2169
 msgid "See Loading the Default Image Streams and Templates"
 msgstr "查看加载默认的 Image Streams and Templates"
 
@@ -465,11 +562,11 @@ msgstr "选择plan"
 msgid "Select from Project"
 msgstr "从项目中选择"
 
-#: dist/origin-web-catalogs.js:2067
+#: dist/origin-web-catalogs.js:2098
 msgid "Select or create project"
 msgstr "选择或者创建项目"
 
-#: dist/origin-web-catalogs.js:2056
+#: dist/origin-web-catalogs.js:2087
 msgid "Select project"
 msgstr "选择项目"
 
@@ -477,7 +574,7 @@ msgstr "选择项目"
 msgid "Service Dashboard"
 msgstr ""
 
-#: dist/origin-web-catalogs.js:2016
+#: dist/origin-web-catalogs.js:2047
 msgid "Services cannot be provisioned without a project."
 msgstr "没有项目，Services不能分配。"
 
@@ -503,7 +600,7 @@ msgstr "切换用户"
 msgid "Take Home Page Tour"
 msgstr ""
 
-#: dist/origin-web-catalogs.js:2129
+#: dist/origin-web-catalogs.js:2160
 msgid "The active filters are hiding all catalog items."
 msgstr "当前过滤条件隐藏了所有目录项。"
 
@@ -564,8 +661,12 @@ msgstr "切换导航"
 msgid "Try Sample Repository"
 msgstr ""
 
-#: dist/origin-web-catalogs.js:2236 dist/origin-web-catalogs.js:2247
-#: dist/origin-web-catalogs.js:2349
+#: dist/origin-web-catalogs.js:929
+msgid "Unable to load all content for the catalog. Error loading"
+msgstr ""
+
+#: dist/origin-web-catalogs.js:2267 dist/origin-web-catalogs.js:2278
+#: dist/origin-web-catalogs.js:2380
 msgid "Update"
 msgstr "更新"
 
@@ -581,7 +682,7 @@ msgstr "值不匹配。"
 msgid "Version"
 msgstr "版本"
 
-#: dist/origin-web-catalogs.js:1300
+#: dist/origin-web-catalogs.js:1331
 msgid "View all"
 msgstr "查看所有"
 
@@ -598,9 +699,17 @@ msgstr "查看Documentation"
 msgid "View Membership"
 msgstr "查看成员"
 
-#: dist/origin-web-catalogs.js:1296
+#: dist/origin-web-catalogs.js:1327
 msgid "View the result for Keyword:"
 msgstr "查看结果按关键词："
+
+#: dist/origin-web-catalogs.js:861
+msgid "Virtual Machines"
+msgstr "虚拟机"
+
+#: dist/origin-web-catalogs.js:860
+msgid "Virtualization"
+msgstr "虚拟化"
 
 #: app/components/oauth/oauth.html:19
 msgid "You are about to change users from"
