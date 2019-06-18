@@ -68,7 +68,7 @@ msgstr ""
 
 #: src/components/create-from-builder/create-from-builder-configure.html:27
 msgid "Application Name"
-msgstr "应用名词"
+msgstr "应用名称"
 
 #: src/components/create-from-builder/create-from-builder-configure.html:65
 msgid "Application name can't be more than 24 characters."
@@ -86,7 +86,7 @@ msgstr "应用名称必填。"
 
 #: src/components/create-from-builder/create-from-builder-configure.html:60
 msgid "Application name must be at least 2 characters."
-msgstr "应用名至少两个字符。"
+msgstr "应用名称至少两个字符。"
 
 #: src/components/services-view/services-view.html:48
 #: src/components/services-view/services-view.html:70
@@ -99,7 +99,7 @@ msgstr "绑定"
 
 #: dist/origin-web-catalogs.js:2155
 msgid "Browse Catalog"
-msgstr "浏览目录"
+msgstr "浏览Catalog"
 
 #: src/components/order-service/order-service-results.html:64
 msgid "Browse resources for {{$ctrl.serviceClass.name}}:"
@@ -116,7 +116,7 @@ msgstr "取消"
 #: src/components/catalog-search/catalog-search.html:4
 #: src/components/catalog-search/catalog-search.html:8
 msgid "Catalog Search"
-msgstr "搜索目录"
+msgstr "搜索Catalog"
 
 #: dist/origin-web-catalogs.js:857
 msgid "CI/CD"
@@ -219,11 +219,11 @@ msgstr "创建项目授权失败"
 
 #: dist/origin-web-catalogs.js:1373
 msgid "Failed to list instances in namespace"
-msgstr "命名空间中列实例名单失败"
+msgstr "无法在命名空间中列出实例"
 
 #: src/components/order-service/order-service-results.html:28
 msgid "failed to provision in"
-msgstr "准备失败在"
+msgstr "provision失败，在"
 
 #: dist/origin-web-catalogs.js:1114
 msgid "Filter by Keyword"
@@ -283,7 +283,7 @@ msgstr "首页"
 msgid ""
 "If this is unexpected, click Cancel. This could be an attempt to trick you "
 "into acting as another user."
-msgstr "如果发生意外，点击取消。"
+msgstr "如果不符合您的预期，请点击取消。这可能是来自其它用户的一次欺骗攻击。"
 
 #: src/components/create-from-builder/create-from-builder-configure.html:111
 msgid ""
@@ -311,7 +311,7 @@ msgstr "信息"
 
 #: dist/origin-web-catalogs.js:853
 msgid "Integration"
-msgstr ""
+msgstr "集成"
 
 #: src/components/create-from-builder/create-from-builder-results.html:8
 msgid "is being created in"
@@ -403,7 +403,7 @@ msgstr "下一步>"
 
 #: dist/origin-web-catalogs.js:2167
 msgid "No catalog items have been loaded."
-msgstr "未加载到目录。"
+msgstr "未加载到catalog项。"
 
 #: src/components/order-service/order-service-info.html:37
 msgid "No description provided."
@@ -503,7 +503,7 @@ msgstr "项目名称由小写字母，数组，横线组成。必须以字母开
 
 #: dist/origin-web-catalogs.js:1131
 msgid "Publisher"
-msgstr ""
+msgstr "发布者"
 
 #: dist/origin-web-catalogs.js:845
 msgid "Python"
@@ -538,24 +538,24 @@ msgstr ""
 
 #: dist/origin-web-catalogs.js:856
 msgid "Runtimes & Frameworks"
-msgstr ""
+msgstr "运行时 & 框架"
 
 #: src/components/create-from-builder/create-from-builder-info.html:32
 msgid "Sample Repository:"
-msgstr ""
+msgstr "Sample仓库"
 
 #: src/components/catalog-search/catalog-search.html:13
 #: src/components/catalog-search/catalog-search.html:21
 msgid "Search Catalog"
-msgstr "搜索目录"
+msgstr "搜索Catalog"
 
 #: dist/origin-web-catalogs.js:2169
 msgid "See Loading the Default Image Streams and Templates"
-msgstr "查看加载默认的 Image Streams and Templates"
+msgstr "查看加载默认的Image Streams和Templates"
 
 #: src/components/select-plan/selectPlan.html:2
 msgid "Select a Plan"
-msgstr "选择plan"
+msgstr "选择一个Plan"
 
 #: src/components/services-view/services-view.html:24
 #: src/components/services-view/services-view.html:38
@@ -572,7 +572,7 @@ msgstr "选择项目"
 
 #: src/components/order-service/order-service-results.html:73
 msgid "Service Dashboard"
-msgstr ""
+msgstr "Service控制面板"
 
 #: dist/origin-web-catalogs.js:2047
 msgid "Services cannot be provisioned without a project."
@@ -580,7 +580,7 @@ msgstr "没有项目，Services不能分配。"
 
 #: src/components/saas-list/saas-list.html:22
 msgid "Show"
-msgstr ""
+msgstr "显示"
 
 #: src/components/create-from-builder/create-from-builder-results.html:16
 #: src/components/order-service/order-service-results.html:40
@@ -590,7 +590,7 @@ msgstr "成功"
 
 #: src/components/order-service/order-service-results.html:70
 msgid "Support"
-msgstr ""
+msgstr "支持"
 
 #: app/components/oauth/oauth.html:21
 msgid "Switch Users"
@@ -598,7 +598,7 @@ msgstr "切换用户"
 
 #: src/components/projects-summary/projects-summary.html:112
 msgid "Take Home Page Tour"
-msgstr ""
+msgstr "首页"
 
 #: dist/origin-web-catalogs.js:2160
 msgid "The active filters are hiding all catalog items."
@@ -612,11 +612,11 @@ msgstr "绑定关系将在分配服务后创建。"
 msgid ""
 "The complete list of your projects could not be loaded. Type a project name "
 "to go to that project."
-msgstr "无法加载完整的项目目录。请输入项目名并前往。"
+msgstr "无法加载完整的项目列表。请输入项目名并前往。"
 
 #: src/components/select-plan/selectPlan.html:21
 msgid "There are no plans currently available for this service."
-msgstr "当前没有可供该服务选择的计划。"
+msgstr "当前没有可供该服务选择的plan。"
 
 #: src/components/order-service/order-service-results.html:13
 msgid "This may take several minutes."
@@ -659,11 +659,11 @@ msgstr "切换导航"
 
 #: src/components/create-from-builder/create-from-builder-configure.html:87
 msgid "Try Sample Repository"
-msgstr ""
+msgstr "尝试Sample仓库"
 
 #: dist/origin-web-catalogs.js:929
 msgid "Unable to load all content for the catalog. Error loading"
-msgstr ""
+msgstr "无法从该catalog加载所有内容。加载错误。"
 
 #: dist/origin-web-catalogs.js:2267 dist/origin-web-catalogs.js:2278
 #: dist/origin-web-catalogs.js:2380
@@ -693,15 +693,15 @@ msgstr "查看所有"
 #: src/components/create-from-builder/create-from-builder-info.html:21
 #: src/components/order-service/order-service-info.html:21
 msgid "View Documentation"
-msgstr "查看Documentation"
+msgstr "查看文档"
 
 #: src/components/projects-summary/projects-summary.html:71
 msgid "View Membership"
-msgstr "查看成员"
+msgstr "查看成员关系"
 
 #: dist/origin-web-catalogs.js:1327
 msgid "View the result for Keyword:"
-msgstr "查看结果按关键词："
+msgstr "按关键词查看结果："
 
 #: dist/origin-web-catalogs.js:861
 msgid "Virtual Machines"
