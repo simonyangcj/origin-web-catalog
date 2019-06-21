@@ -97,10 +97,6 @@ msgstr ""
 msgid "Browse resources for {{$ctrl.serviceClass.name}}:"
 msgstr ""
 
-#: src/components/projects-summary/projects-summary.html:95
-msgid "by"
-msgstr ""
-
 #: app/components/oauth/oauth.html:14
 #: app/components/oauth/oauth.html:22
 msgid "Cancel"
@@ -176,7 +172,7 @@ msgstr ""
 msgid "Create Project"
 msgstr ""
 
-#: src/components/projects-summary/projects-summary.html:94
+#: src/components/projects-summary/projects-summary.html:95
 msgid "created"
 msgstr ""
 

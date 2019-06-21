@@ -124,7 +124,7 @@ msgstr ""
 
 #: dist/origin-web-catalogs.js:2162
 msgid "Clear All Filters"
-msgstr "清空筛选"
+msgstr "清空过滤"
 
 #: src/components/catalog-search/catalog-search.html:35
 msgid "Clear Search Input"
@@ -227,11 +227,11 @@ msgstr "provision失败，在"
 
 #: dist/origin-web-catalogs.js:1114
 msgid "Filter by Keyword"
-msgstr "按关键词筛选"
+msgstr "按关键词过滤"
 
 #: dist/origin-web-catalogs.js:2085
 msgid "Filter projects by name"
-msgstr "按项目名筛选"
+msgstr "按项目名过滤"
 
 #: src/components/create-from-builder/create-from-builder-info.html:24
 #: src/components/order-service/order-service-info.html:24
@@ -723,8 +723,3 @@ msgstr "你正在登陆"
 msgid "You are not authorized to add to this project."
 msgstr "您未被授权添加项目。"
 
-#~ msgid "has been added to"
-#~ msgstr "被添加到"
-
-#~ msgid "has been created in"
-#~ msgstr "创建于"
